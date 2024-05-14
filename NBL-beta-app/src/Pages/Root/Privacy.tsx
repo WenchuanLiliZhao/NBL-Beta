@@ -1,10 +1,13 @@
+import RootPageLayout from "./1_RootPageLayout"
 
 
 const Privacy = {
   title: "Privacy",
   key: "privacy",
   content: (<>
-    <h1>Privacy</h1>
+    <RootPageLayout>
+      <h1>Privacy Gose Here</h1>
+    </RootPageLayout>
   </>)
 }
 

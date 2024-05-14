@@ -9,8 +9,7 @@ import './App.scss'
 
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
-import IndexOfRootPages from './Pages/Root/0_IndexOfRootPages'; // 导入所有一级页面
-import Nav from './Components/Nav';
+import IndexOfPages from './Pages/0_IndexOfPages'; // 导入所有页面
 
 function App() {
   const [count, setCount] = useState(0) // 说实话我不知道这是什么，先留着再说了
@@ -20,16 +19,12 @@ function App() {
       <div>
         <BrowserRouter>
           <Routes>
-            <Route index element={IndexOfRootPages.Home.content} />
+            <Route index element={IndexOfPages.Home.content} />
             
-            {/* 由于不同层级的页面的基本结构有所不同，因此分开枚举映射；也因此，类似 Nav、Header 和 Footer 一类的组建也分开添加至 element 中 */}
-            {Object.values(IndexOfRootPages).map((item: any, index: any) => (
+            {Object.values(IndexOfPages).map((item: any, index: any) => (
               <Route
                 path={`/${item.key}`}
-                element={<>
-                  <Nav />
-                  {item.content}
-                </>} key={`${item}${index}`}></Route>
+                element={item.content} key={`${item}${index}`}></Route>
             ))}
           </Routes>
         </BrowserRouter>
