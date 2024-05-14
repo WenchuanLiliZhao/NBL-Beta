@@ -9,7 +9,7 @@ import './App.scss'
 
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
-import IndexOfRootPages from './Pages/Root/_IndexOfRootPages'; // 导入所有一级页面
+import IndexOfRootPages from './Pages/Root/0_IndexOfRootPages'; // 导入所有一级页面
 import Nav from './Components/Nav';
 
 function App() {

@@ -1,4 +1,4 @@
-import IndexOfRootPages from "./Root/_IndexOfRootPages"
+import IndexOfRootPages from "./Root/0_IndexOfRootPages"
 
 const IndexOfPages = {
   ...IndexOfRootPages,
