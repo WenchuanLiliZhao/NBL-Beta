@@ -1,19 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
+import IndexOfPages from "../Pages/_IndexOfPages";
 
 function Nav() {
   return (
     <>
       <div>
-        <Link to="/home">Home</Link>
+        <NavLink to={`/${IndexOfPages.Home.key}`}>{IndexOfPages.Home.title}</NavLink>
       </div>
 
       <div>
-        <Link to="/about">About</Link>
+        <NavLink to={`/${IndexOfPages.About.key}`}>{IndexOfPages.About.title}</NavLink>
       </div>
 
       <div>
-        <Link to="/aaa">AAA</Link>
+        <NavLink to={`/${IndexOfPages.Privacy.key}`}>{IndexOfPages.Privacy.title}</NavLink>
       </div>
     </>
   )
