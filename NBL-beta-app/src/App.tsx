@@ -9,8 +9,7 @@ import './App.scss' // 这个东西之后不需要，而且我需要用 scss 而
 
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
-// 莉莉备忘：以下是根页面，之后需要建立一个 page index 来统筹管理这些页面
-import IndexOfRootPages from './Pages/Root/_IndexOfRootPages';
+import IndexOfRootPages from './Pages/Root/_IndexOfRootPages'; // 导入所有一级页面
 import Nav from './Components/Nav';
 
 function App() {
