@@ -4,7 +4,7 @@
 // import viteLogo from '/vite.svg'
 
 import { useState } from 'react'
-import './App.scss' // 这个东西之后不需要，而且我需要用 scss 而不是 css
+import './App.scss'
 
 
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
