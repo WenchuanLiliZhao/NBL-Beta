@@ -6,15 +6,15 @@ function Nav() {
   return (
     <>
       <div>
-        <NavLink to={`/${IndexOfPages.Home.key}`}>{IndexOfPages.Home.title}</NavLink>
+        <NavLink to={`/${IndexOfPages.Home().key}`}>{IndexOfPages.Home().title}</NavLink>
       </div>
 
       <div>
-        <NavLink to={`/${IndexOfPages.About.key}`}>{IndexOfPages.About.title}</NavLink>
+        <NavLink to={`/${IndexOfPages.About().key}`}>{IndexOfPages.About().title}</NavLink>
       </div>
 
       <div>
-        <NavLink to={`/${IndexOfPages.Privacy.key}`}>{IndexOfPages.Privacy.title}</NavLink>
+        <NavLink to={`/${IndexOfPages.Privacy().key}`}>{IndexOfPages.Privacy().title}</NavLink>
       </div>
     </>
   )
