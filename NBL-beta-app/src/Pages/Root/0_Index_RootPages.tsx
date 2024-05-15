@@ -8,7 +8,7 @@ import Privacy from "./Privacy";
 
 import NoPage from "./NoPage";
 
-const IndexOfRootPages = {
+const Index_RootPages = {
   Home,
   About,
   Privacy,
@@ -16,5 +16,4 @@ const IndexOfRootPages = {
 }
 
 
-
-export default IndexOfRootPages
+export default Index_RootPages

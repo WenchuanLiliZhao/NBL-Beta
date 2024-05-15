@@ -5,7 +5,7 @@ import './AppStyle/0-app.scss'
 
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
-import IndexOfPages from './Pages/0_IndexOfPages'; // 导入所有页面
+import Index_Pages from './Pages/0_IndexOfPages'; // 导入所有页面
 
 function App() {
   useState(() => {
@@ -26,9 +26,9 @@ function App() {
       <div>
         <BrowserRouter>
           <Routes>
-            <Route index element={IndexOfPages.Home().content} />
+            <Route index element={Index_Pages.Home().content} />
             
-            {Object.values(IndexOfPages).map((item: any, index: any) => (
+            {Object.values(Index_Pages).map((item: any, index: any) => (
               <Route
                 path={`/${item().key}`}
                 element={item().content} key={`${item()}${index}`}></Route>

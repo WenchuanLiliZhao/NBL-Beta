@@ -1,3 +1,4 @@
+
 import RootPageLayout from "./1_RootPageLayout"
 
 export default function Privacy() {
