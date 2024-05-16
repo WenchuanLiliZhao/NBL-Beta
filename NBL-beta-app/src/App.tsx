@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 
 import './AppStyle/0-app.scss'
 
-
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
 import Index_Pages from './Pages/0_IndexOfPages'; // 导入所有页面
