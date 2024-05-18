@@ -11,9 +11,14 @@ const channels = {
   Inst_Riverwood_About,
 }
 
+const books = {
+  
+}
+
 const Repo_Inst_Riverwood = {
   info,
   channels,
+  books,
 }
 
 export default Repo_Inst_Riverwood
