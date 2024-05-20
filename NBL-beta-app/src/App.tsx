@@ -18,7 +18,7 @@ function App() {
     // console.log()
   }, []);
 
-  const [count, setCount] = useState(0) // 说实话我不知道这是什么，先留着再说了
+  // const [count, setCount] = useState(0) // 说实话我不知道这是什么，先留着再说了
 
   return (
     <>
@@ -37,11 +37,11 @@ function App() {
       </div>
 
       {/* 说实话我不知道这是什么，先留着再说了 */}
-      <div className="card">
+      {/* <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-      </div>
+      </div> */}
     </>
   )
 }
