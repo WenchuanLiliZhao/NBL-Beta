@@ -1,4 +1,4 @@
-import InsNav from "../InsNav";
+import InstNav from "../InstNav";
 import BasicLayout from "./1_Basic";
 
 import "./InsPageLayout.scss"
@@ -6,7 +6,7 @@ import "./InsPageLayout.scss"
 export default function InsPageLayout(props: any) {
   return (<>
     <BasicLayout>
-      <InsNav channels={props.channels} />
+      <InstNav channels={props.channels} />
       {props.children}
     </BasicLayout>
   </>)

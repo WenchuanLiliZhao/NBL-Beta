@@ -5,9 +5,13 @@ const info = {
 
 import Inst_Riverwood_Home from "./Home";
 import Inst_Riverwood_About from "./About";
+import Inst_Riverwood_AllBooks from "./AllBooks";
+import Inst_Riverwood_Topics from "./Topics";
 
 const channels = {
   Inst_Riverwood_Home,
+  Inst_Riverwood_Topics,
+  Inst_Riverwood_AllBooks,
   Inst_Riverwood_About,
 }
 
