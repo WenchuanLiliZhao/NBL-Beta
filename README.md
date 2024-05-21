@@ -19,3 +19,11 @@ npm run build
 ```
 
 用于本地预览。
+
+```Typescript
+{Object.values(Index_Pages).map((item: any, index: any) => (
+  <Route
+    path={`/${item().key}`}
+    element={item().content} key={`${item()}${index}`}></Route>
+))}
+```

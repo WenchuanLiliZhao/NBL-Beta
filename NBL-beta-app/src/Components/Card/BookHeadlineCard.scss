@@ -1,0 +1,45 @@
+.book-headline-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  .book-headline-card-cover {
+    // 
+  }
+
+  .book-headline-card-info {
+    padding: 20px; padding-left: 32px;
+    align-self: center;
+
+    .book-headline-card-authors-bar {
+      .book-headline-card-author {
+        display: inline;
+        font-size: 14px;
+
+        &:not(:first-of-type) {
+          &::before {
+            content: ", ";
+          }
+        }
+      }
+    }
+
+    .book-headline-card-title {
+      margin-top: 8px;
+      font-family: var(--font-family-article);
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 1.25;
+    }
+
+    .book-headline-card-brief {
+      margin-top: 12px;
+      font-family: var(--font-family-article);
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
