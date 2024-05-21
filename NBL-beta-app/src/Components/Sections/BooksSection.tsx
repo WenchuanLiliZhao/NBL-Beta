@@ -1,3 +1,6 @@
+import "./BooksSection.scss"
+
+import BookCard from "../Card/BookCard";
 import BookHeadlineCard from "../Card/BookHeadlineCard";
 import SectionHeader from "../Heading/SectionHeader";
 
@@ -38,7 +41,16 @@ export default function BooksSection(props: any) {
 
       <div className="books-section-body">
         <div className="books-section-headline-container">
-          < BookHeadlineCard book={myBook}/>
+          <BookHeadlineCard book={myBook}/>
+        </div>
+
+        <div className="books-section-list">
+          <BookCard book={myBook}/>
+          <BookCard book={myBook}/>
+          <BookCard book={myBook}/>
+          <BookCard book={myBook}/>
+          <BookCard book={myBook}/>
+          <BookCard book={myBook}/>
         </div>
       </div>
     </div>

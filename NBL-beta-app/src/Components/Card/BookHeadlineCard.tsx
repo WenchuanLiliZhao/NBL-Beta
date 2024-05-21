@@ -2,11 +2,13 @@ import "./BookHeadlineCard.scss"
 
 import Book_The_Lulu from "./Book_The_Lulu"
 import "./BookHeadlineCard.scss"
+import { Link } from "react-router-dom";
 
 export default function BookHeadlineCard(props: any) {
   // all info
   const book = props.book;
 
+  const key = `/${book.key}`
   const title = book.title;
   const authors = book.authors;
   const cover = book.cover;
@@ -14,7 +16,7 @@ export default function BookHeadlineCard(props: any) {
   const brief = book.brief;
 
   return (<>
-    <div className="book-headline-card">
+    <Link to={key} className="book-headline-card">
       <div className="book-headline-card-cover">
         <Book_The_Lulu cover={cover}/>
       </div>
@@ -36,6 +38,6 @@ export default function BookHeadlineCard(props: any) {
           {brief}
         </div>
       </div>
-    </div>
+    </Link>
   </>)
 }
