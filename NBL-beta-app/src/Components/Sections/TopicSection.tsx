@@ -1,8 +1,8 @@
 import "./TopicSection.scss"
 
 import SectionHeader from "../Heading/SectionHeader";
-import TopicHeadlineCard from "../Card/TopicHeadlineCard";
-import TopicCard from "../Card/TopicCard";
+import TopicHeadlineCard from "../Card/StoryHeadlineCard";
+import TopicCard from "../Card/StoryCard";
 
 export default function TopicSection() {
   return (<>
