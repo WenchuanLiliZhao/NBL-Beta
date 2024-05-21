@@ -1,4 +1,4 @@
-import InstHeader from "../../../../Components/Layouts/InstHeader"
+import InstHeader from "../../../../Components/Sections/InstHeader"
 import BooksSection from "../../../../Components/Sections/BooksSection"
 import StoriesSection from "../../../../Components/Sections/StoriesSection"
 import Repo_Inst_Riverwood from "./0_Repo_Inst_Riverwood_Pages"
