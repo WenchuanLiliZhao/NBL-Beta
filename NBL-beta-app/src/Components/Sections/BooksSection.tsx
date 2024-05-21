@@ -50,7 +50,6 @@ export default function BooksSection(props: any) {
           <BookCard book={myBook}/>
           <BookCard book={myBook}/>
           <BookCard book={myBook}/>
-          <BookCard book={myBook}/>
         </div>
       </div>
     </div>

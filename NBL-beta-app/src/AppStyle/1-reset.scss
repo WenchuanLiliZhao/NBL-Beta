@@ -83,3 +83,11 @@ html {
 img {
 	vertical-align: middle;
 }
+
+#USE_CHAT_GPT_AI_ROOT,
+#USE_CHAT_GPT_AI_ROOT_Context_Menu,
+#MAXAI_GLOBAL_VIDEO_POPUP_CONTAINER_ID,
+#USE_CHAT_GPT_AI_ROOT_Minimize_Container,
+#MAXAI_SNACKBAR_CONTAINER {
+	display: none;
+}
