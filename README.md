@@ -10,3 +10,12 @@ npm run build
 
 以检查某些能在 dev 中运行的东西在部署之后无法运行。
 
+## 本地预览
+
+我在 `package.json` 中加入了一行
+
+```json
+"start": "HOST=0.0.0.0 react-scripts start",
+```
+
+用于本地预览。

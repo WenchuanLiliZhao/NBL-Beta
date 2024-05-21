@@ -1,5 +1,9 @@
 .inst-page {
   .inst-body {
     padding-top: var(--nav-height);
+    padding: 48px;
+    max-width: 1024px;
+    box-sizing: content-box;
+    margin: 0 auto;
   }
 }
