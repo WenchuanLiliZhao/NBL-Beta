@@ -1,13 +1,13 @@
-.topic-headline-card {
+.story-headline-card {
   display: flex;
   background-color: rgba(black, 0.04);
   
 
-  .topic-cover-container {
+  .story-cover-container {
     flex-shrink: 0;
     width: 61.8%;
     // aspect-ratio: 16 / 9;
-    .topic-cover {
+    .story-cover {
       position: relative;
       padding-top: 56.25%;
 
@@ -17,22 +17,22 @@
     }
   }
 
-  .topic-info-container {
+  .story-info-container {
     display: flex;
     // justify-content: center;
     align-items: center;
 
-    .topic-info {
+    .story-info {
       padding: 20px;
       padding-right: 32px;
 
-      .topic-title {
+      .story-title {
         font-size: 24px;
         font-weight: bold;
         font-family: var(--font-family-article);
       }
 
-      .topic-brief {
+      .story-brief {
         font-size: 14px;
         font-family: var(--font-family-article);
         margin-top: 8px;
@@ -44,14 +44,14 @@
         -webkit-box-orient: vertical;
       }
 
-      .topic-author-info-container {
+      .story-author-info-container {
         margin-top: 16px;
         font-size: 14px;
         line-height: 24px;
         display: flex;
         
 
-        .topic-author-avata {
+        .story-author-avata {
           width: 24px; height: 24px; position: relative;
 
           overflow: hidden;
@@ -65,19 +65,19 @@
           }
         }
 
-        .topic-author-caption {
+        .story-author-caption {
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
           -webkit-line-clamp: 1;
           -webkit-box-orient: vertical;
           
-          .topic-author-name {
+          .story-author-name {
             display: inline;
             font-weight: bold;
           }
 
-          .topic-update {
+          .story-update {
             display: inline;
             color: var(--text-color-secondary-trans);
 

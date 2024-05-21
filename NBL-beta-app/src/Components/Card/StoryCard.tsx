@@ -3,7 +3,7 @@ import "./StoryCard.scss"
 import { Link } from "react-router-dom";
 
 
-export default function TopicCard(props: any) {
+export default function StoryCard(props: any) {
   const linkTo = props.linkTo;
   const cover = props.cover;
   const title = props.title;
@@ -14,29 +14,29 @@ export default function TopicCard(props: any) {
 
   return (<>
   
-    <Link to={linkTo} className="topic-card">
-      <div className="topic-cover-container">
-        <div className="topic-cover">
+    <Link to={linkTo} className="story-card">
+      <div className="story-cover-container">
+        <div className="story-cover">
           <img src={cover} alt="" />
         </div>
       </div>
-      <div className="topic-info-container">
-        <div className="topic-info">
-          <div className="topic-title">
+      <div className="story-info-container">
+        <div className="story-info">
+          <div className="story-title">
             {title}
           </div>
-          <div className="topic-brief">
+          <div className="story-brief">
             {brief}
           </div>
-          <div className="topic-author-info-container">
-            <div className="topic-author-avata">
+          <div className="story-author-info-container">
+            <div className="story-author-avata">
               <img src={authorAvata} alt="" />
             </div>
-            <div className="topic-author-caption">
-              <div className="topic-author-name">
+            <div className="story-author-caption">
+              <div className="story-author-name">
                 {authorName}
               </div>
-              <span className="topic-update">{update}</span>
+              <span className="story-update">{update}</span>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import InstHeader from "../../../../Components/Layouts/InstHeader"
-import TopicSection from "../../../../Components/Sections/TopicSection"
+import StoriesSection from "../../../../Components/Sections/StoriesSection"
 import Repo_Inst_Riverwood from "./0_Repo_Inst_Riverwood_Pages"
 import Layout_Inst_Riverwood from "./1_Layout_Inst_Riverwood"
 
@@ -12,7 +12,7 @@ export default function Inst_Riverwood_Home() {
     content: (<>
       <Layout_Inst_Riverwood>
         <InstHeader></InstHeader>
-        <TopicSection />
+        <StoriesSection />
 
         This is Hoooome
       </Layout_Inst_Riverwood>
