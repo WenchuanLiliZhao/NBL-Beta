@@ -10,10 +10,7 @@ export default function BookCard(props: any) {
   const key = `/${book.key}`
   const title = book.title;
   const authors = book.info.authors;
-  const cover = book.cover;
-
-  console.log(authors)
-  
+  const cover = book.cover;  
 
   return (<>
     <Link to={key} className="book-card">

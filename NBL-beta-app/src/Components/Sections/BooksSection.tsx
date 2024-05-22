@@ -8,9 +8,8 @@ import Index_Books from "../../Pages/DataBase/Books/0_Index"
 
 export default function BooksSection(props: any) {
   const headline = props.headline;
-  if (headline != null) {
-    console.log(headline);
-  }
+
+  const books = props.books;
 
   return (<>
     <div className="books-section">
@@ -18,14 +17,15 @@ export default function BooksSection(props: any) {
 
       <div className="books-section-body">
         <div className="books-section-headline-container">
-          <BookHeadlineCard book={Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems()}/>
+          <BookHeadlineCard book={headline}/>
         </div>
 
         <div className="books-section-list">
-          <BookCard book={Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems()}/>
-          <BookCard book={Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems()}/>
-          <BookCard book={Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems()}/>
-          <BookCard book={Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems()}/>
+          {books.map((item: any, index: any) => (
+            <div key={`${item}${index}`}>
+              <BookCard book={item}/>
+            </div>
+          ))}
         </div>
       </div>
     </div>
