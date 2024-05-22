@@ -98,6 +98,8 @@
 @media screen and (max-width: 800px) {
   .story-headline-card {
     display: block;
+
+    margin-bottom: 32px; // note: 這個在大屏幕上是 24
   
     .story-cover-container {
       .story-cover {

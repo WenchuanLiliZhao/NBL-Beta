@@ -1,6 +1,9 @@
 .book-headline-card {
   display: grid;
   grid-template-columns: 50% 50%;
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 100%;
+  }
 
   .book-headline-card-cover {
     // 
@@ -8,32 +11,65 @@
 
   .book-headline-card-info {
     padding: 20px; padding-left: 32px;
+    @media screen and (max-width: 700px) {
+      padding: 0;
+      margin-bottom: 24px;
+    }
+
     align-self: center;
 
-    .book-headline-card-authors-bar {
-      .book-headline-card-author {
-        display: inline;
-        font-size: 14px;
+    .book-headline-card-title-bar {
 
-        &:not(:first-of-type) {
-          &::before {
-            content: ", ";
+      @media screen and (max-width: 700px) {
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: column-reverse;
+        margin-top: 8px;
+
+        > * {
+          width: 100%;
+          // flex-shrink: 0;
+        }
+      }
+
+      .book-headline-card-authors-bar {
+        .book-headline-card-author {
+          display: inline;
+          font-size: 14px;
+
+          &:not(:first-of-type) {
+            &::before {
+              content: ", ";
+            }
           }
+        }
+      }
+
+      .book-headline-card-title {
+        margin-top: 8px;
+        font-family: var(--font-family-article);
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 1.25;
+
+        @media screen and (max-width: 700px) {
+          margin-top: 2px;
         }
       }
     }
 
-    .book-headline-card-title {
-      margin-top: 8px;
-      font-family: var(--font-family-article);
-      font-size: 28px;
-      font-weight: bold;
-      line-height: 1.25;
-    }
-
     .book-headline-card-brief {
+      
       margin-top: 12px;
       font-family: var(--font-family-article);
+      color: var(--text-color-main-trans);
+      font-size: 16px;
+      @media screen and (max-width: 700px) {
+        margin-top: 8px;
+        font-size: 14px;
+        font-family: var(--font-family-system);
+        color: var(--text-color-secondary-trans);
+      }
 
       overflow: hidden;
       text-overflow: ellipsis;

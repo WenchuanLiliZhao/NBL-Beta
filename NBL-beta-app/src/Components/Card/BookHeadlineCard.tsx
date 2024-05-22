@@ -21,18 +21,17 @@ export default function BookHeadlineCard(props: any) {
         <Book_The_Lulu cover={cover}/>
       </div>
       <div className="book-headline-card-info">
-        <div className="book-headline-card-authors-bar">
-          {authors.map((item: any, index: any) => (
-            <div className="book-headline-card-author" key={`${item}${index}`}>
-              {item.name}
-            </div>
-          ))}
-          {/* <div className="book-headline-card-publisher">
-            {publisher}
-          </div> */}
-        </div>
-        <div className="book-headline-card-title">
-          {title}
+        <div className="book-headline-card-title-bar">
+          <div className="book-headline-card-authors-bar">
+            {authors.map((item: any, index: any) => (
+              <div className="book-headline-card-author" key={`${item}${index}`}>
+                {item.name}
+              </div>
+            ))}
+          </div>
+          <div className="book-headline-card-title">
+            {title}
+          </div>
         </div>
         <div className="book-headline-card-brief">
           {brief}
