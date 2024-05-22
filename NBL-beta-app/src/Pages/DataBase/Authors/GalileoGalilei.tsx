@@ -1,7 +1,7 @@
 function Author_GalileoGalilei() {
   return {
-    title: "ga",
-    key: "ga",
+    title: "Galileo Galilei",
+    key: "galilei-galilei",
   }
 }
 

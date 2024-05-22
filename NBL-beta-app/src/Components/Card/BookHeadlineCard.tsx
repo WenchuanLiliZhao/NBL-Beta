@@ -10,7 +10,7 @@ export default function BookHeadlineCard(props: any) {
 
   const key = `/${book.key}`
   const title = book.title;
-  const authors = book.authors;
+  const authors = book.info.authors;
   const cover = book.cover;
   // const publisher = book.publisher.name;
   const brief = book.brief;
@@ -25,7 +25,7 @@ export default function BookHeadlineCard(props: any) {
           <div className="book-headline-card-authors-bar">
             {authors.map((item: any, index: any) => (
               <div className="book-headline-card-author" key={`${item}${index}`}>
-                {item.name}
+                {item().title}
               </div>
             ))}
           </div>

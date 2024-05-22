@@ -9,9 +9,11 @@ export default function BookCard(props: any) {
 
   const key = `/${book.key}`
   const title = book.title;
-  const authors = book.authors;
+  const authors = book.info.authors;
   const cover = book.cover;
-  // const brief = book.brief;
+
+  console.log(authors)
+  
 
   return (<>
     <Link to={key} className="book-card">
@@ -25,13 +27,11 @@ export default function BookCard(props: any) {
         <div className="book-card-authors-bar">
           {authors.map((item: any, index: any) => (
             <div className="book-card-author" key={`${item}${index}`}>
-              {item.name}
+              {item().title}
             </div>
           ))}
         </div>
-        {/* <div className="book-card-brief">
-          {brief}
-        </div> */}
+
       </div>
     </Link>
   </>)

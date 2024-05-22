@@ -4,35 +4,12 @@ import BookCard from "../Card/BookCard";
 import BookHeadlineCard from "../Card/BookHeadlineCard";
 import SectionHeader from "../Heading/SectionHeader";
 
+import Index_Books from "../../Pages/DataBase/Books/0_Index"
+
 export default function BooksSection(props: any) {
   const headline = props.headline;
   if (headline != null) {
     console.log(headline);
-  }
-
-
-  // 这个需要整理成虚拟数据库
-  const myBook = {
-    title: "Book Title",
-    authors: [
-      {
-        name: "Giotto",
-      },
-
-      {
-        name: "Forty-two",
-      },
-    ],
-
-    cover: "https://i.pinimg.com/564x/38/a9/14/38a914f21ba01c5acff93296a54e7571.jpg",
-
-    publisher: {
-      name: "Taschen",
-    },
-
-    brief: (<>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ex nunc, luctus sed lectus ut, porttitor varius lacus. In hac habitasse platea dictumst. Cras quis enim venenatis, ornare lorem non, finibus orci. Aliquam vehicula dictum lobortis. Sed odio urna, facilisis vitae nisl eu, iaculis pretium nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ante lacus, efficitur non semper posuere, porttitor vel arcu. Fusce erat nulla, tristique rutrum ipsum quis, volutpat ultrices ipsum. Curabitur non lorem tristique, venenatis est et, rutrum sapien.</p>
-    </>)
   }
 
   return (<>
@@ -41,14 +18,14 @@ export default function BooksSection(props: any) {
 
       <div className="books-section-body">
         <div className="books-section-headline-container">
-          <BookHeadlineCard book={myBook}/>
+          <BookHeadlineCard book={Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems()}/>
         </div>
 
         <div className="books-section-list">
-          <BookCard book={myBook}/>
-          <BookCard book={myBook}/>
-          <BookCard book={myBook}/>
-          <BookCard book={myBook}/>
+          <BookCard book={Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems()}/>
+          <BookCard book={Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems()}/>
+          <BookCard book={Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems()}/>
+          <BookCard book={Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems()}/>
         </div>
       </div>
     </div>
