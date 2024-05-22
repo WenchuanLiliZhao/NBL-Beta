@@ -1,5 +1,6 @@
 const Author_GalileoGalilei = {
-  name: "Galileo Galilei",
+  title: "Galileo Galilei",
+  key: "galileo-galilei",
 }
 
 export default Author_GalileoGalilei
