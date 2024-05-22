@@ -1,6 +1,8 @@
-const Author_GalileoGalilei = {
-  title: "Galileo Galilei",
-  key: "galileo-galilei",
+function Author_GalileoGalilei() {
+  return {
+    title: "ga",
+    key: "ga",
+  }
 }
 
 export default Author_GalileoGalilei
