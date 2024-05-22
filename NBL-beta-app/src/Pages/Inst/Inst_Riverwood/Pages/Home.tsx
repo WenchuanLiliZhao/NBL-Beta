@@ -7,6 +7,7 @@ import Index_Books from "../../../DataBase/Books/0_Index"
 
 
 export default function Inst_Riverwood_Home() {
+
   return {
     title: "主頁",
     key: `${Repo_Inst_Riverwood.info.key}/home`,
@@ -16,6 +17,10 @@ export default function Inst_Riverwood_Home() {
         <InstHeader></InstHeader>
         <StoriesSection />
         <BooksSection
+          sectionTitle = {`推薦閱讀`}
+          btnLink = ""
+          btnText = "查看更多"
+
           headline = {Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems()}
 
           books = {[

@@ -4,16 +4,16 @@ import BookCard from "../Card/BookCard";
 import BookHeadlineCard from "../Card/BookHeadlineCard";
 import SectionHeader from "../Heading/SectionHeader";
 
-import Index_Books from "../../Pages/DataBase/Books/0_Index"
-
 export default function BooksSection(props: any) {
+  const sectionTitle = props.sectionTitle;
+  const btnLink = props.btnLink;
+  const btnText = props.btnText;
   const headline = props.headline;
-
   const books = props.books;
 
   return (<>
     <div className="books-section">
-      <SectionHeader title="推薦圖書" btnLink="" btnText="查看更多" />
+      <SectionHeader title={sectionTitle} btnLink={btnLink} btnText={btnText} />
 
       <div className="books-section-body">
         <div className="books-section-headline-container">

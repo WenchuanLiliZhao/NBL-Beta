@@ -11,9 +11,6 @@ export default function StoryHeadlineCard(props: any) {
   const authorName = props.authorName;
   const update = props.update;
 
-  console.log(`啊，美麗的一天，你看見一篇頭條文章，名字叫《${title}》，由${authorName}撰寫。`)
-
-
   return (<>
     <Link to={linkTo} className="story-headline-card">
       <div className="story-cover-container">
