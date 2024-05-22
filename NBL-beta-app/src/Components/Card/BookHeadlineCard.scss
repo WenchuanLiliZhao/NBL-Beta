@@ -59,23 +59,26 @@
     }
 
     .book-headline-card-brief {
-      
-      margin-top: 12px;
-      font-family: var(--font-family-article);
-      color: var(--text-color-main-trans);
-      font-size: 16px;
-      @media screen and (max-width: 700px) {
-        margin-top: 8px;
-        font-size: 14px;
-        font-family: var(--font-family-system);
-        color: var(--text-color-secondary-trans);
-      }
 
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-line-clamp: 6;
       -webkit-box-orient: vertical;
+      
+      margin-top: 12px;
+      font-family: var(--font-family-article);
+      // color: var(--text-color-main-trans);
+      font-size: 16px;
+      @media screen and (max-width: 700px) {
+        margin-top: 8px;
+        font-size: 14px;
+        font-family: var(--font-family-system);
+        // color: var(--text-color-secondary-trans);
+        -webkit-line-clamp: 3;
+      }
+
+      
     }
   }
 }
