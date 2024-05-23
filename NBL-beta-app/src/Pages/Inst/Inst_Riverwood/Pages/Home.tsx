@@ -24,7 +24,7 @@ export default function Inst_Riverwood_Home() {
           headline = {Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems()}
 
           books = {[
-            Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems(),
+            Index_Books.Book_TextAudioBook(),
 
             Index_Books.Book_DialogueConcerningTheTwoChiefWorldSystems(),
 
