@@ -1,5 +1,5 @@
-import Footer from "../Footer";
-import InstNav from "../InstNav";
+import Footer from "../Navigations/Footer";
+import InstNav from "../Navigations/InstNav";
 
 import "./InstPageLayout.scss"
 

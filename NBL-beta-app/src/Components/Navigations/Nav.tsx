@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import Index_Pages from "../Pages/0_IndexOfPages";
+import Index_Pages from "../../Pages/0_IndexOfPages";
 
 function Nav() {
   return (

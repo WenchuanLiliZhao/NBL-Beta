@@ -1,5 +1,5 @@
 import Author_GalileoGalilei from "../../Authors/GalileoGalilei";
-import SampleHTMLBook_TestAudioBook from "./SampleHtml";
+import Toc from "./Chapters/0_Toc";
 
 const Info = {
   title: "Test Audio Book",
@@ -17,7 +17,7 @@ const Info = {
 
   brief: "Brief goes here...",
 
-  samples: SampleHTMLBook_TestAudioBook(),
+  toc: Toc
 }
 
 export default Info

@@ -2,7 +2,6 @@ import Book_DialogueConcerningTheTwoChiefWorldSystems from "./DialogueConcerning
 import Book_JuliusCaesar from "./JuliusCaesar/0_Book";
 import Book_TextAudioBook from "./TestAudioBook/0_Book";
 import Toc from "./TestAudioBook/Chapters/0_Toc";
-import SampleHTMLBook_TestAudioBook from "./TestAudioBook/SampleHtml";
 
 const Index_Books = {
   Book_DialogueConcerningTheTwoChiefWorldSystems,
@@ -10,7 +9,6 @@ const Index_Books = {
   Book_JuliusCaesar,
 
   Book_TextAudioBook,
-  SampleHTMLBook_TestAudioBook,
   ...Toc
 }
 
