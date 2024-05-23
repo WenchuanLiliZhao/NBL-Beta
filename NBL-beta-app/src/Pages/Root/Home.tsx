@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import Index_Pages from "../0_IndexOfPages"
 
 import RootPageLayout from "./1_RootPageLayout"
@@ -11,7 +11,7 @@ export default function Home() {
       <RootPageLayout>
         <h1><span className="material-symbols-outlined">home</span>Home 家園 <span className="test">家園</span></h1>
 
-        <Link to={`${Index_Pages.Inst_Riverwood_Home().key}`}>Riverwood</Link>
+        <a href={`/${Index_Pages.Inst_Riverwood_Home().key}`}>Riverwood</a>
       </RootPageLayout>
     </>)
   }

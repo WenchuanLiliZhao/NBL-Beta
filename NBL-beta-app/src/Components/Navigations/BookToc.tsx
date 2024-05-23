@@ -4,19 +4,21 @@ import "./BookToc.scss";
 export default function BookToc(props: any) {
   const toc = props.toc
 
+
   return (<>
-    <p>==========</p>
-    <p>Begin Toc:</p>
-    <p>==========</p>
-    {Object.values(toc).map((item: any, index: any) => (
-      <div className="" key={`${item}${index}`}>
-        <a href={`/${item().key}`}>
-          {item().title}
-        </a>
+    {Object.values(toc).map((part: any, i: any) => (
+      <div className="book-parts" key={`${part}${i}`}>
+        <div className="part-title">{part.title}</div>
+
+        {Object.values(part.chapters).map((chapter: any, k: any) => (
+          <div className="part-chapters" key={`${chapter}${k}`}>
+            <a href={`/${chapter().key}`}>
+              - {chapter().title}
+            </a>
+          </div>
+        ))}
       </div>
     ))}
-    <p>==========</p>
-    <p>End Toc:</p>
-    <p>==========</p>
+    <p>----------</p>
   </>)
 }
