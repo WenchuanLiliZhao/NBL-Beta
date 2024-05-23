@@ -50,18 +50,6 @@ body {
   cursor: pointer;
 }
 
-.container {
-  margin-left: 20px;
-}
-.transcript-sentence {
-  cursor: pointer;
-  margin: 5px 0;
-  transition: 0.3s;
-}
-
-.transcript-sentence.active {
-  background-color: orange;
-}
 
 #time-display {
   margin-top: 10px;
