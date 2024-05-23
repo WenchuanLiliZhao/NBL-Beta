@@ -3,7 +3,7 @@ import Layout from "./0_Layout";
 
 import Info from "../Info"
 
-export default function Section0() {
+export default function Chapter0() {
 
   return {
     title: "Introduction",
