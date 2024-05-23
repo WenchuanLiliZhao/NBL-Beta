@@ -1,5 +1,5 @@
 import Author_GalileoGalilei from "../../Authors/GalileoGalilei";
-import Toc from "./Chapters/0_Toc";
+import Index_Chapters from "./Chapters/0_Toc";
 
 const Info = {
   title: "Test Audio Book",
@@ -17,7 +17,7 @@ const Info = {
 
   brief: "Brief goes here...",
 
-  toc: Toc
+  toc: Index_Chapters
 }
 
 export default Info
