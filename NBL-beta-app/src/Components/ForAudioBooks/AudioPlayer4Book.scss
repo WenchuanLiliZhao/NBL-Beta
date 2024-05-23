@@ -1,4 +1,4 @@
-/* AudioPlayer.css */
+
 
 body {
   font-family: Arial, sans-serif;
@@ -53,13 +53,13 @@ body {
 .container {
   margin-left: 20px;
 }
-.transcript {
+.transcript-sentence {
   cursor: pointer;
   margin: 5px 0;
   transition: 0.3s;
 }
 
-.transcript .active {
+.transcript-sentence.active {
   background-color: orange;
 }
 

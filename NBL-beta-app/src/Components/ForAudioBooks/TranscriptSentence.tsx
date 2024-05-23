@@ -22,7 +22,7 @@ const TP: React.FC<TPProps> = ({ time, children }) => {
     };
 
     return (
-        <span className="test transcript-sentence" data-start={time} onClick={handleClick}>
+        <span className="transcript-sentence" data-start={time} onClick={handleClick}>
             {children}
         </span>
     );

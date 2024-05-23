@@ -1,18 +1,16 @@
 import React, { useRef, useState, useEffect } from 'react';
-import './Test.scss';
+import "./AudioPlayer4Book.scss"
 
 interface AudioPlayerProps {
     src: string;
-    children: React.ReactNode;
 }
 
-const AudioPlayer: React.FC<AudioPlayerProps> = ({ src, children }) => {
+const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
     const audioPlayerRef = useRef<HTMLAudioElement>(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [currentTime, setCurrentTime] = useState(0);
     const [duration, setDuration] = useState(0);
     const [buffered, setBuffered] = useState(0);
-    console.log(buffered)
 
     useEffect(() => {
         const audioPlayer = audioPlayerRef.current;
@@ -25,7 +23,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ src, children }) => {
             const progressBar = document.getElementById('progress-bar');
             if (progressBar) progressBar.style.width = `${percent}%`;
 
-            const transcriptElements = document.querySelectorAll<HTMLSpanElement>('.transcript .test');
+            const transcriptElements = document.querySelectorAll<HTMLSpanElement>('.transcript-sentence');
             transcriptElements.forEach(para => {
                 const startTime = parseFloat(para.getAttribute('data-start')!);
                 if (audioPlayer.currentTime >= startTime) {
@@ -57,6 +55,13 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ src, children }) => {
             audioPlayer.removeEventListener('loadedmetadata', setAudioData);
         };
     }, [duration]);
+
+    useEffect(() => {
+        const bufferedBar = document.getElementById('buffered-bar');
+        if (bufferedBar) {
+            bufferedBar.style.width = `${buffered}%`;
+        }
+    }, [buffered]);
 
     const formatTime = (time: number) => {
         const minutes = Math.floor(time / 60);
@@ -106,12 +111,8 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ src, children }) => {
                     <div className="progress-bar" id="progress-bar"></div>
                 </div>
             </div>
-
-            <div className="container">
-                {children}
-            </div>
         </div>
     );
 };
 
-export default AudioPlayer;
+export default AudioPlayer4Book;
