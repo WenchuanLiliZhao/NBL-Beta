@@ -1,18 +1,16 @@
 import TP from "../../../../../Components/ForAudioBooks/TranscriptSentence";
-import AudioBookReadingLayout from "../../../../../Components/Layouts/AudioBookReadingLayout";
+import Layout from "./0_Layout";
 
 import Info from "../Info"
 
 export default function Section1() {
-  const sectionIndex = 1
 
   return {
     title: "Section 1",
-    sectionIndex: sectionIndex,
-    key: `${Info.key}/${sectionIndex}`,
+    key: `${Info.key}/audio-test`,
 
     content: (<>
-      <AudioBookReadingLayout audio="https://upload.wikimedia.org/wikipedia/commons/a/ac/Marin_Marais_%281656-1728%29_%E2%80%93_Sonnerie_de_Sainte-Genevi%C3%A8ve_du_Mont_de_Paris_The_Bells_of_St._Genevieve_from_La_Gamme_et_Autres_Morceaux_de_Symphonie_%281723%29.ogg">
+      <Layout audio="https://upload.wikimedia.org/wikipedia/commons/6/61/Marin_Marais_%281656-1728%29_-_Tombeau_de_Mr._Meliton%2C_No._83_from_Premier_livre_de_pi%C3%A8ces_%C3%A0_une_et_%C3%A0_deux_violes_%281689%29.ogg">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse numquam consectetur deleniti magni, in nihil asperiores ratione temporibus, laboriosam, eos cupiditate deserunt porro! Assumenda impedit repellat quae vel odit obcaecati!
           <TP time={1}>欢迎来到知书阅听图书馆有声书。</TP>
@@ -21,7 +19,7 @@ export default function Section1() {
           <TP time={15}>让我们来一起了解它的实现方式。</TP>
           <TP time={20}>谢谢大家的聆听。</TP>
         </p>
-      </AudioBookReadingLayout>
+      </Layout>
     </>)
   }
 }

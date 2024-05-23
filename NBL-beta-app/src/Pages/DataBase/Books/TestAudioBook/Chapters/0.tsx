@@ -4,12 +4,10 @@ import Layout from "./0_Layout";
 import Info from "../Info"
 
 export default function Section0() {
-  const sectionIndex = 0
 
   return {
     title: "Introduction",
-    sectionIndex: sectionIndex,
-    key: `${Info.key}/${sectionIndex}`,
+    key: `${Info.key}/introduction`,
 
     content: (<>
       <Layout audio="https://upload.wikimedia.org/wikipedia/commons/a/ac/Marin_Marais_%281656-1728%29_%E2%80%93_Sonnerie_de_Sainte-Genevi%C3%A8ve_du_Mont_de_Paris_The_Bells_of_St._Genevieve_from_La_Gamme_et_Autres_Morceaux_de_Symphonie_%281723%29.ogg">

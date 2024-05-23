@@ -13,15 +13,15 @@ export default function BookContentLayout(props: any) {
 
 
   const ReadingFrom = bookToc[Object.keys(bookToc)[0]]
-  console.log(ReadingFrom().sectionIndex)
-  const ReadingFromKey = String(ReadingFrom().sectionIndex)
+  
+  const ReadingFromKey = String(ReadingFrom().key)
 
   return (<>
     <p>Book Content Layout...</p>
     
     <p>{bookBrief}</p>
     <p>《{bookTitle}》</p>
-    <p><Link to={ReadingFromKey}>Link</Link></p>
+    <p><Link to={`/${ReadingFromKey}`}>Link</Link></p>
     {props.children}
 
     
