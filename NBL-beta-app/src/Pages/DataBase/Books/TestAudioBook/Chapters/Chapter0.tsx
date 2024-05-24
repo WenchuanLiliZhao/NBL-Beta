@@ -1,5 +1,5 @@
 import TP from "../../../../../Components/ForAudioBooks/TranscriptSentence";
-import Layout from "./0_Layout";
+import Layout from "../0_Layout";
 
 import Info from "../Info"
 

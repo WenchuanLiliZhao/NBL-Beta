@@ -6,14 +6,14 @@ export default function BookToc(props: any) {
 
 
   return (<>
-    {Object.values(toc).map((part: any, i: any) => (
+    {toc.map((part: any, i: any) => (
       <div className="book-parts" key={`${part}${i}`}>
         <div className="part-title">{part.title}</div>
 
-        {Object.values(part.chapters).map((chapter: any, k: any) => (
+        {part.chapters.map((chapter: any, k: any) => (
           <div className="part-chapters" key={`${chapter}${k}`}>
             <a href={`/${chapter().key}`}>
-              - {chapter().title}
+              - {chapter().title} sss
             </a>
           </div>
         ))}
