@@ -10,6 +10,9 @@ import RootPages from './Pages/Root/RootPages';
 // 导入机构
 import InstPages from './Pages/Inst/InstPages';
 
+// 导入作者
+import Authors from './Pages/Authors/Authors';
+
 function App() {
   useState(() => {
     // console.log()
@@ -33,20 +36,29 @@ function App() {
             <Route index element={RootPages.RootPage_Home.content} />
 
             {/* 设置全站根页面 */}
-            {Object.values(RootPages).map((page: any, i: any) => (
+            {Object.values(RootPages).map((item: any, i: any) => (
               <Route
-                path={`/${page.info.key}`}
-                element={page.content}
-                key = {`${page}${i}`}
+                path={`/${item.info.key}`}
+                element={item.content}
+                key = {`${item}${i}`}
               ></Route>
             ))}
 
             {/* 导入机构 */}
-            {Object.values(InstPages).map((inst: any, i: any) => (
+            {Object.values(InstPages).map((item: any, i: any) => (
               <Route
-                path={`/${inst.info.key}`}
-                element={inst.content}
-                key = {`${inst}${i}`}
+                path={`/${item.info.key}`}
+                element={item.content}
+                key = {`${item}${i}`}
+              ></Route>
+            ))}
+
+            {/* 导入作者 */}
+            {Object.values(Authors).map((item: any, i: any) => (
+              <Route
+                path={`/${item.info.key}`}
+                element={item.content}
+                key = {`${item}${i}`}
               ></Route>
             ))}
           </Routes>
