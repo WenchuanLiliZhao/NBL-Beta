@@ -1,9 +1,9 @@
 import Content from "./Content";
 import PageInfo from "./PageInfo";
 
-const Inst_Riverwood_Stories = {
+const Inst_NBLInst_About = {
   info: PageInfo,
   content: Content(),
 }
 
-export default Inst_Riverwood_Stories
+export default Inst_NBLInst_About

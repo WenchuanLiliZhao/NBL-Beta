@@ -1,7 +1,7 @@
-import RiverwoodPages from "./Riverwood/RiverwoodPages";
+import NBLInst from "./NBLInst/NBLInst";
 
 const InstPages = {
-  ...RiverwoodPages,
+  ...NBLInst,
 }
 
 export default InstPages
