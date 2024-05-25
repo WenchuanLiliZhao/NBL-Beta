@@ -7,7 +7,7 @@ export default function DateFormat(props: any) {
   // Convert the array to a Date object - adjust for 0-based month index
   const dateObj = new Date(date[0], date[1] - 1, date[2]);
   // --------------------- year --- month ------ day
-  // In the following gethMoth() function, we obtain Jan as the 0-th month.
+  // In the following gethMoth() function, we obtain Jan as the 0th month.
 
   // Extract the components of the date
   const day = dateObj.getDate();
