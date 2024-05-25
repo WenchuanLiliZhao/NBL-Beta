@@ -1,5 +1,5 @@
 
-import RiverwoodLayout from "../Layout";
+import RiverwoodLayout from "../../Layout";
 
 export default function Content() {
   return (<>
