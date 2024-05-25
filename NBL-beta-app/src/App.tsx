@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import RootPages from './Pages/Root/RootPages';
 import InstPages from './Pages/Inst/InstPages';
 import Authors from './Pages/Authors/Authors';
-import Stories from './Pages/Inst/NBLInst/Stories/Stories';
 
 function App() {
   useState(() => {
