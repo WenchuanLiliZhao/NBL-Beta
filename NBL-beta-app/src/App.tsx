@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import RootPages from './Pages/Root/RootPages';
 import InstPages from './Pages/Inst/InstPages';
 import Authors from './Pages/Authors/Authors';
-import Stories from './Pages/Stories/Stories';
+import Stories from './Pages/Inst/NBLInst/Stories/Stories';
 
 function App() {
   useState(() => {
@@ -51,15 +51,6 @@ function App() {
 
             {/* import book authors */}
             {Object.values(Authors).map((item: any, i: any) => (
-              <Route
-                path={`/${item.info.key}`}
-                element={item.content}
-                key = {`${item}${i}`}
-              ></Route>
-            ))}
-
-            {/* import stories by users */}
-            {Object.values(Stories).map((item: any, i: any) => (
               <Route
                 path={`/${item.info.key}`}
                 element={item.content}

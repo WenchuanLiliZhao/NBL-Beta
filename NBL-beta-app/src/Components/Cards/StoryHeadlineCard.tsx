@@ -1,23 +1,24 @@
 import { Link } from "react-router-dom"
 import "./StoryHeadlineCard.scss"
+import DateFormat from "../../Functions.tsx/DateFormat"
 
 export default function StoryHeadlineCard(props: any) {
-  const story = props.story
+  const story = props.story.info
 
   return (<>
-    <Link to={`/${story.info.key}`} className="story-headline-card">
+    <Link to={`/${story.key}`} className="story-headline-card">
       <div className="story-cover-container">
         <div className="story-cover">
-          <img src={story.info.cover} alt="" />
+          <img src={story.cover} alt="" />
         </div>
       </div>
       <div className="story-info-container">
         <div className="story-info">
           <div className="story-title">
-            {story.info.title}
+            {story.title}
           </div>
           <div className="story-brief">
-            {story.info.brief}
+            {story.brief}
           </div>
           <div className="story-author-info-container">
             <div className="story-author-avata">
@@ -27,7 +28,7 @@ export default function StoryHeadlineCard(props: any) {
               <div className="story-author-name">
                 喬托
               </div>
-              <span className="story-update">1493年1月1日</span>
+              <span className="story-update">{DateFormat({date: story.update})}</span>
             </div>
           </div>
         </div>

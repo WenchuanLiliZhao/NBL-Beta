@@ -1,7 +1,9 @@
-import NBLInst from "./NBLInst/NBLInst";
+import NBLInst from "./NBLInst/0_Repo";
+import Stories from "./NBLInst/Stories/Stories";
 
 const InstPages = {
-  ...NBLInst,
+  ...NBLInst.pages,
+  ...Stories,
 }
 
 export default InstPages

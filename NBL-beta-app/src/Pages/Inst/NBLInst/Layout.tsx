@@ -1,8 +1,8 @@
 import InstLayout from "../../../Components/Layouts/InstLayout";
-import Inst_NBLInst_About from "./Pages/About/0_Repo";
-import Inst_NBLInst_Home from "./Pages/Home/0_Repo";
-import Inst_NBLInst_Library from "./Pages/Library/0_Repo";
-import Inst_NBLInst_Stories from "./Pages/Stories/0_Repo";
+import Inst_NBLInst_About from "./InstRootPages/About/0_Repo";
+import Inst_NBLInst_Home from "./InstRootPages/Home/0_Repo";
+import Inst_NBLInst_Library from "./InstRootPages/Library/0_Repo";
+import Inst_NBLInst_Stories from "./InstRootPages/Stories/0_Repo";
 
 export default function RiverwoodLayout(props: any) {
   
