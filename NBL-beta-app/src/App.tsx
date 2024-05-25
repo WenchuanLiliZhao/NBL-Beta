@@ -4,14 +4,10 @@ import './AppStyle/0-app.scss'
 
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
-// 这里导入根页面
 import RootPages from './Pages/Root/RootPages';
-
-// 导入机构
 import InstPages from './Pages/Inst/InstPages';
-
-// 导入作者
 import Authors from './Pages/Authors/Authors';
+import Stories from './Pages/Stories/Stories';
 
 function App() {
   useState(() => {
@@ -32,10 +28,10 @@ function App() {
       <div>
         <BrowserRouter>
           <Routes>
-            {/* 设置全站首页 */}
+            {/* set home page of nbl */}
             <Route index element={RootPages.RootPage_Home.content} />
 
-            {/* 设置全站根页面 */}
+            {/* import root pages of nbl */}
             {Object.values(RootPages).map((item: any, i: any) => (
               <Route
                 path={`/${item.info.key}`}
@@ -44,7 +40,7 @@ function App() {
               ></Route>
             ))}
 
-            {/* 导入机构 */}
+            {/* import institutes */}
             {Object.values(InstPages).map((item: any, i: any) => (
               <Route
                 path={`/${item.info.key}`}
@@ -53,8 +49,17 @@ function App() {
               ></Route>
             ))}
 
-            {/* 导入作者 */}
+            {/* import book authors */}
             {Object.values(Authors).map((item: any, i: any) => (
+              <Route
+                path={`/${item.info.key}`}
+                element={item.content}
+                key = {`${item}${i}`}
+              ></Route>
+            ))}
+
+            {/* import stories by users */}
+            {Object.values(Stories).map((item: any, i: any) => (
               <Route
                 path={`/${item.info.key}`}
                 element={item.content}
