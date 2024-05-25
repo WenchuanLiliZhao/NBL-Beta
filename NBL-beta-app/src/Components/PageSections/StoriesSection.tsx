@@ -2,6 +2,7 @@ import "./StoriesSection.scss"
 
 import SectionHeader from "../Heading/SectionHeader";
 import StoryHeadlineCard from "../Cards/StoryHeadlineCard";
+import StoryCard from "../Cards/StoryCard";
 
 // import StoryCard from "../Card/StoryCard";
 
@@ -14,6 +15,9 @@ export default function StoriesSection(props: any) {
     headlineCard = (<StoryHeadlineCard story = {headline}/>)
   }
 
+  const stories = props.stories
+  console.log(stories)
+
   return (<>
     <div className="stories-section">
       <SectionHeader title="近期專題" btnLink="" btnText="查看更多" />
@@ -21,6 +25,12 @@ export default function StoriesSection(props: any) {
       <div className="stories-section-body">
         <div className="stories-section-headline-container">
           {headlineCard}
+        </div>
+
+        <div className="stories-section-list-container">
+          {stories.map((item: any, i: any) => (
+            <StoryCard key={`${item}${i}`} story={item} />
+          ))}
         </div>
 
         {/* <div className="stories-section-list-container">
