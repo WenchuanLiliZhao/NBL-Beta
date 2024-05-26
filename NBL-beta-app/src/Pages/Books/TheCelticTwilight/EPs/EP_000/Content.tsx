@@ -1,5 +1,11 @@
+
+import Layout from "../../Layout";
+
 export default function Content() {
+
   return (<>
-    EP 000
+    <Layout>
+      EP000
+    </Layout>
   </>)
 }

@@ -1,5 +1,11 @@
+import Layout from "../../Layout";
+import EPInfo from "./EPInfo";
+
 export default function Content() {
+  console.log(EPInfo.audio)
   return (<>
-    EP 001
+    <Layout audio={EPInfo.audio}>
+      EP001
+    </Layout>
   </>)
 }

@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import "./AudioPlayer4Book.scss"
+import { useLocation } from 'react-router-dom';
 
 interface AudioPlayerProps {
     src: string;
@@ -94,10 +95,19 @@ const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
         audioPlayerRef.current.currentTime = (offsetX / width) * duration;
     };
 
+    // 下面这组代码非常重要，它可以保证通过 navlink 进行页面切换时可以获取新的 audio source；否则，将无法正常获取心的 audio source。
+    const location = useLocation(); // 获取当前路径
+
+    useEffect(() => {
+        if (audioPlayerRef.current) {
+            audioPlayerRef.current.load(); // 重新加载音频
+        }
+    }, [location]);
+
     return (
         <div>
             <audio id="audio-source" ref={audioPlayerRef} controls hidden>
-                <source src={src} />
+                <source src={src}/>
                 您的浏览器不支持 audio 元素。
             </audio>
 
