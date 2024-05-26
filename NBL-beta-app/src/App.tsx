@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import RootPages from './Pages/Root/RootPages';
 import InstPages from './Pages/Inst/InstPages';
 import Authors from './Pages/Authors/Authors';
+import Books from './Pages/Books/Books';
+import BookPages from './Pages/Books/BookPages';
 
 function App() {
   useState(() => {
@@ -46,6 +48,26 @@ function App() {
                 element={item.content}
                 key = {`${item}${i}`}
               ></Route>
+            ))}
+
+            {/* import books */}
+            {Object.values(Books).map((book: any, i: any) => (
+              <Route
+                path={`/${book.info.key}`}
+                element={book.content}
+                key = {`${book}${i}`}
+              >
+              </Route>
+            ))}
+
+            {/* import book pages */}
+            {Object.values(BookPages).map((book: any, i: any) => (
+              <Route
+                path={`/${book.info.key}`}
+                element={book.content}
+                key = {`${book}${i}`}
+              >
+              </Route>
             ))}
 
             {/* import book authors */}
