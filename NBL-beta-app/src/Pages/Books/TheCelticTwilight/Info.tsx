@@ -14,7 +14,7 @@ const BookInfo = {
 
   catagories: "Test",
 
-  brief: "Brief goes here...",
+  brief: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum veritatis ullam, reprehenderit dicta esse tenetur possimus? Placeat quasi voluptatem libero vitae magni aut amet cum. Dolor iusto repellendus unde impedit!",
 }
 
 export default BookInfo
