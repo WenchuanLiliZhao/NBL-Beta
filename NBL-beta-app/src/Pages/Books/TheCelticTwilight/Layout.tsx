@@ -5,7 +5,7 @@ import Book_TheCelticTwilight from "./0_Repo"
 
 export default function Layout(props: any) {
   return (<>
-    <BookPageLayout toc={Book_TheCelticTwilight.toc} audio={props.audio}>
+    <BookPageLayout book={Book_TheCelticTwilight} audio={props.audio}>
       {props.children}
     </BookPageLayout>
   </>)
