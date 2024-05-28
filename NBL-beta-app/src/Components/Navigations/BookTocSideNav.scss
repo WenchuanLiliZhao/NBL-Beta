@@ -79,6 +79,7 @@
 
     .book-toc {
       font-size: 14px;
+      line-height: 22px;
 
       .part {
         padding: 16px 0;
@@ -105,7 +106,7 @@
           .icon {
             width: 16px; height: 16px;
             font-size: 16px;
-            vertical-align: text-bottom;
+            vertical-align: text-top;
             margin-right: 4px;
             opacity: 0.64;
           }
