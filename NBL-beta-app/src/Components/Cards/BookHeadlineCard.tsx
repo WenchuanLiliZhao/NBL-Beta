@@ -19,8 +19,6 @@ export default function BookHeadlineCard(props: any) {
   const authorsCount = authors.length;
   const hiddenAuthorsCount = authorsCount - maxDisplayAuthorsCount
 
-  console.log(hiddenAuthorsCount)
-
   return (<>
     <Link to={key} className="book-headline-card">
       <div className="book-headline-card-cover">
