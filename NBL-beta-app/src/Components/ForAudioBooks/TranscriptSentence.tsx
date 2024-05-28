@@ -7,7 +7,7 @@ interface TPProps {
     children: React.ReactNode;
 }
 
-const TP: React.FC<TPProps> = ({ time, children }) => {
+const TS: React.FC<TPProps> = ({ time, children }) => {
     const audioPlayerRef = useRef<HTMLAudioElement | null>(null);
 
     useEffect(() => {
@@ -29,4 +29,4 @@ const TP: React.FC<TPProps> = ({ time, children }) => {
     );
 };
 
-export default TP;
+export default TS;
