@@ -185,7 +185,9 @@ const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
 
             <div className="buffered-bar" id="buffered-bar"></div>
             <div className="progress-bar" id="progress-bar">
-              <div className="drag-btn" onMouseDown={dragStartHandler}></div>
+              <div className="drag-btn" onMouseDown={dragStartHandler}>
+                <div className="ovel"><div className="spot"></div></div>
+              </div>
             </div>
           </div>
 
