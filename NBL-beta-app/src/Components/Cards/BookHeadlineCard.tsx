@@ -15,6 +15,12 @@ export default function BookHeadlineCard(props: any) {
   // const publisher = book.publisher.name;
   const brief = book.info.brief;
 
+  const maxDisplayAuthorsCount = 2;
+  const authorsCount = authors.length;
+  const hiddenAuthorsCount = authorsCount - maxDisplayAuthorsCount
+
+  console.log(hiddenAuthorsCount)
+
   return (<>
     <Link to={key} className="book-headline-card">
       <div className="book-headline-card-cover">
@@ -28,11 +34,14 @@ export default function BookHeadlineCard(props: any) {
           </div>
 
           <div className="book-headline-card-authors-bar">
-            {authors.map((item: any, index: any) => (
+            {authors.slice(0, maxDisplayAuthorsCount).map((item: any, index: any) => (
               <div className="book-headline-card-author" key={`${item}${index}`}>
-                {item.info.title}
+                {item.data.info.title}
               </div>
             ))}
+            {hiddenAuthorsCount > 0 ? (<>
+              <span> and {hiddenAuthorsCount} other author{hiddenAuthorsCount > 1 ? "s": ""}</span>
+            </>) : (<></>)}
           </div>
         </div>
         <div className="book-headline-card-brief">

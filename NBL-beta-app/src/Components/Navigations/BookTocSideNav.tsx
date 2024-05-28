@@ -15,6 +15,14 @@ export default function BookTocSideNav(props: any) {
 
     document.querySelectorAll("body")[0].classList.toggle("scroll-disabled");
   }
+  
+
+  const maxDisplayAuthorsCount = 2;
+  const authorsCount = book.info.authors.length;
+  const hiddenAuthorsCount = authorsCount - maxDisplayAuthorsCount
+
+  console.log(hiddenAuthorsCount)
+
 
   return (
     <>
@@ -33,17 +41,22 @@ export default function BookTocSideNav(props: any) {
         </div>
 
         <div className="book-toc-sidenav-container">
-          <div className="book-title-container">
-            <div className="book-title">{book.info.title}</div>
-            <div className="book-authors">
-              {book.info.authors.map((author: any, i: any) => (
-                <span className="book-author" key={`${author}${i}`}>
-                  {i !== 0 ? ', ' : ''}
-                  {author.info.title}
-                </span>
-              ))}
+          <a href={`/${book.info.key}`}>
+            <div className="book-title-container">
+              <div className="book-title">{book.info.title}</div>
+              <div className="book-authors">
+                {book.info.authors.slice(0, maxDisplayAuthorsCount).map((author: any, i: any) => (
+                  <span className="book-author" key={`${author}${i}`}>
+                    {i !== 0 ? ', ' : ''}
+                    {author.data.info.title}
+                  </span>
+                ))}
+                {hiddenAuthorsCount > 0 ? (<>
+                  <span> and {hiddenAuthorsCount} other author{hiddenAuthorsCount > 1 ? "s": ""}</span>
+                </>) : (<></>)}
+              </div>
             </div>
-          </div>
+          </a>
 
           <div className="book-toc">
             {toc.map((part: any, i: any) => (

@@ -49,10 +49,9 @@
       .book-headline-card-authors-bar {
         color: var(--text-color-secondary-trans);
         margin-top: 8px;
+        font-size: 14px;
         .book-headline-card-author {
           display: inline;
-          font-size: 14px;
-
           &:not(:first-of-type) {
             &::before {
               content: ", ";

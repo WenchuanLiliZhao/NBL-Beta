@@ -24,7 +24,7 @@ export default function BookCard(props: any) {
         <div className="book-card-authors-bar">
           {authors.map((item: any, index: any) => (
             <div className="book-card-author" key={`${item}${index}`}>
-              {item.info.title}
+              {item.data.info.title}
             </div>
           ))}
         </div>
