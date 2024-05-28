@@ -217,10 +217,7 @@ const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
         </div>
 
         {/* pin btn */}
-        <div className="control-btn" onClick={ToggleTsTracking}>
-            <span className='material-symbols-outlined icon'>keep</span>
-            <span className='hover-layer'></span>
-        </div>
+        <ToggleTsTracking />
       </div>
     </div>
   );
