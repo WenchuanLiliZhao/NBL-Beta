@@ -50,14 +50,20 @@ const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
       setDuration(audioPlayer.duration);
     };
 
+    const handleAudioEnded = () => {
+      setIsPlaying(false);
+    };
+
     audioPlayer.addEventListener('timeupdate', updateProgress);
     audioPlayer.addEventListener('progress', updateBuffered);
     audioPlayer.addEventListener('loadedmetadata', setAudioData);
+    audioPlayer.addEventListener('ended', handleAudioEnded);
 
     return () => {
       audioPlayer.removeEventListener('timeupdate', updateProgress);
       audioPlayer.removeEventListener('progress', updateBuffered);
       audioPlayer.removeEventListener('loadedmetadata', setAudioData);
+      audioPlayer.removeEventListener('ended', handleAudioEnded);
     };
   }, [duration]);
 
@@ -171,13 +177,12 @@ const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
   useEffect(() => {
     if (audioPlayerRef.current) {
       audioPlayerRef.current.load();
+      setIsPlaying(false);  // Reset isPlaying state when location changes
     }
   }, [location]);
 
-
   TsTracking()
 
-  
   return (
     <div className='audio-player-4-book'>
       <audio id="audio-source" ref={audioPlayerRef} controls hidden>

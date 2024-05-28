@@ -25,7 +25,7 @@ export default function TsTracking() {
         setLastY(currentY);
 
         // 计算滚动位置
-        const position = currentY - 400;
+        const position = currentY - 360;
 
         // 滚动到指定位置
         window.scrollTo(0, position);
