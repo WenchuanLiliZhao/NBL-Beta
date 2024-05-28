@@ -193,6 +193,12 @@ const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
 
           <div id="remaining-time" className="time-number">{formatTime(duration - currentTime)}</div>
         </div>
+
+        {/* pin btn */}
+        <div className="control-btn">
+            <span className='material-symbols-outlined icon'>keep</span>
+            <span className='hover-layer'></span>
+        </div>
       </div>
     </div>
   );
