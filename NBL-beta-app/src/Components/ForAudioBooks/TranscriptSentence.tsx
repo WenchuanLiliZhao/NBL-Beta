@@ -23,7 +23,7 @@ const TS: React.FC<TPProps> = ({ time, children }) => {
     };
 
     return (
-        <span className="transcript-sentence" data-start={time} onClick={handleClick}>
+        <span className="transcript-sentence tracking" data-start={time} onClick={handleClick}>
             {children}
         </span>
     );

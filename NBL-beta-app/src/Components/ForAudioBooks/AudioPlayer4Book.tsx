@@ -1,6 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
 import "./AudioPlayer4Book.scss"
 import { useLocation } from 'react-router-dom';
+import TsTracking from './Functions/TsTracking';
+import ToggleTsTracking from './Functions/ToggleTsTracking';
 
 interface AudioPlayerProps {
   src: string;
@@ -95,19 +97,19 @@ const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
     audioPlayerRef.current.currentTime = (offsetX / width) * duration;
   };
 
-  const dragStartHandler = (e: React.MouseEvent<HTMLDivElement>) => {
+  const dragStartHandler = () => {
     setIsDragging(true);
   };
 
-  const draggingHandler = (e: MouseEvent) => {
+  const draggingHandler = (clientX: number) => {
     if (isDragging) {
       const progressContainer = progressContainerRef.current;
       if (!progressContainer || !audioPlayerRef.current) return;
 
       const rect = progressContainer.getBoundingClientRect();
-      const offsetX = e.clientX - rect.left;
+      const offsetX = clientX - rect.left;
       const width = progressContainer.offsetWidth;
-      const newTime = Math.max(0, Math.min((offsetX / width) * duration, duration)); // 限制范围在 0 到 duration
+      const newTime = Math.max(0, Math.min((offsetX / width) * duration, duration));
 
       const percent = (newTime / duration) * 100;
       const progressBar = document.getElementById('progress-bar');
@@ -117,16 +119,16 @@ const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
     }
   };
 
-  const dragEndHandler = (e: MouseEvent) => {
+  const dragEndHandler = (clientX: number) => {
     if (isDragging) {
       const audioPlayer = audioPlayerRef.current;
       const progressContainer = progressContainerRef.current;
       if (!progressContainer || !audioPlayer) return;
 
       const rect = progressContainer.getBoundingClientRect();
-      const offsetX = e.clientX - rect.left;
+      const offsetX = clientX - rect.left;
       const width = progressContainer.offsetWidth;
-      audioPlayer.currentTime = Math.max(0, Math.min((offsetX / width) * duration, duration)); // 限制范围在 0 到 duration
+      audioPlayer.currentTime = Math.max(0, Math.min((offsetX / width) * duration, duration));
       setIsDragging(false);
 
       if (isPlaying) {
@@ -136,15 +138,31 @@ const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
   };
 
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => draggingHandler(e);
-    const handleMouseUp = (e: MouseEvent) => dragEndHandler(e);
+    const handleMouseMove = (e: MouseEvent) => draggingHandler(e.clientX);
+    const handleMouseUp = (e: MouseEvent) => dragEndHandler(e.clientX);
+
+    const handleTouchMove = (e: TouchEvent) => {
+      if (e.touches.length > 0) {
+        draggingHandler(e.touches[0].clientX);
+      }
+    };
+
+    const handleTouchEnd = (e: TouchEvent) => {
+      if (e.changedTouches.length > 0) {
+        dragEndHandler(e.changedTouches[0].clientX);
+      }
+    };
 
     document.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseup', handleMouseUp);
+    document.addEventListener('touchmove', handleTouchMove);
+    document.addEventListener('touchend', handleTouchEnd);
 
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseup', handleMouseUp);
+      document.removeEventListener('touchmove', handleTouchMove);
+      document.removeEventListener('touchend', handleTouchEnd);
     };
   }, [isDragging, isPlaying, duration]);
 
@@ -156,6 +174,10 @@ const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
     }
   }, [location]);
 
+
+  TsTracking()
+
+  
   return (
     <div className='audio-player-4-book'>
       <audio id="audio-source" ref={audioPlayerRef} controls hidden>
@@ -185,7 +207,7 @@ const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
 
             <div className="buffered-bar" id="buffered-bar"></div>
             <div className="progress-bar" id="progress-bar">
-              <div className="drag-btn" onMouseDown={dragStartHandler}>
+              <div className="drag-btn" onMouseDown={dragStartHandler} onTouchStart={dragStartHandler}>
                 <div className="ovel"><div className="spot"></div></div>
               </div>
             </div>
@@ -195,7 +217,7 @@ const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
         </div>
 
         {/* pin btn */}
-        <div className="control-btn">
+        <div className="control-btn" onClick={ToggleTsTracking}>
             <span className='material-symbols-outlined icon'>keep</span>
             <span className='hover-layer'></span>
         </div>
