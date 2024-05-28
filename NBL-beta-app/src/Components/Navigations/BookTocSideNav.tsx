@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import './BookTocSideNav.scss';
 
 export default function BookTocSideNav(props: any) {
@@ -9,20 +9,18 @@ export default function BookTocSideNav(props: any) {
   const audioIcon = (<><span className="material-symbols-outlined icon">sound_sampler</span></>);
   
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const location = useLocation();
 
   function toggleSidebar() {
     setIsCollapsed(!isCollapsed);
-
-    document.querySelectorAll("body")[0].classList.toggle("scroll-disabled");
+    document.body.classList.toggle("scroll-disabled");
   }
-  
 
   const maxDisplayAuthorsCount = 2;
   const authorsCount = book.info.authors.length;
-  const hiddenAuthorsCount = authorsCount - maxDisplayAuthorsCount
+  const hiddenAuthorsCount = authorsCount - maxDisplayAuthorsCount;
 
-  console.log(hiddenAuthorsCount)
-
+  console.log(hiddenAuthorsCount);
 
   return (
     <>
@@ -65,11 +63,15 @@ export default function BookTocSideNav(props: any) {
 
                 <div className="eps">
                   {part.eps.map((ep: any, k: any) => (
-                    <NavLink className="ep" key={`${ep}${k}`} to={`/${ep.info.key}`}>
+                    <a
+                      className={`ep ${location.pathname.endsWith(ep.info.key) ? 'active' : ''}`}
+                      key={`${ep}${k}`}
+                      href={`/${ep.info.key}`}
+                    >
                       {ep.info.audio !== null ? audioIcon : noAudioIcon}
                       <span className="text">{ep.info.title}</span>
                       {/* here is the placeholder for the icon of locked item */}
-                    </NavLink>
+                    </a>
                   ))}
                 </div>
               </div>

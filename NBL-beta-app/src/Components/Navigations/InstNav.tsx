@@ -1,10 +1,14 @@
 import "./InstNav.scss"
 
-import { NavLink } from "react-router-dom"
+
+import { useLocation } from 'react-router-dom'; // 1. 从 'react-router-dom' 导入 useLocation 钩子
+
 
 export default function InstNav(props: any) {
   
   const channels = props.channels
+
+  const location = useLocation(); // 2. 使用 useLocation 钩子获取当前的路径
 
   return (<>
     <div className="inst-nav">
@@ -19,9 +23,9 @@ export default function InstNav(props: any) {
         {/* 機構中所有的頻道 */}
         <div className="items">
           {channels.map((item: any, index: any) => (
-            <NavLink className={`item`} to={`/${item.info.key}`} key={`${item}${index}`}>
+            <a className={`item ${location.pathname.endsWith(item.info.key) ? 'active' : ''}`} href={`/${item.info.key}`} key={`${item}${index}`}>
               {item.info.title}
-            </NavLink>
+            </a>
           ))}
         </div>
       </div>
