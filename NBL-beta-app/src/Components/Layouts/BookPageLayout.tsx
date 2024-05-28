@@ -9,11 +9,10 @@ export default function BookPageLayout(props: any) {
   const ep = props.ep
 
   return (<>
+    {ep.audio != null ? (<AudioPlayer4Book src={ep.audio} />) : (<></>)}
     <BookTocSideNav book={book} />
     <div className="book-page">
-      {ep.audio != null ? (<AudioPlayer4Book src={ep.audio} />) : (<></>)}
-      <div className="md">
-        <div className="ep-title-section">
+      <div className="ep-title-section">
           <h1 className="page-title">{ep.title}</h1>
           {ep.authors != null ? (<>
             <div className="authors">
@@ -26,8 +25,7 @@ export default function BookPageLayout(props: any) {
             </div>
           </>) : (<></>)}
         </div>
-        {props.children}
-      </div>
+        <div className="md">{props.children}</div>
     </div>
   </>)
 }
