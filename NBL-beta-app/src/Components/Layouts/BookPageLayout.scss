@@ -10,8 +10,6 @@
   }
 
   font-family: var(--font-family-article);
-
-  --book-font-size: 18px;
   font-size: var(--book-font-size);
 
   .ep-title-section {
@@ -33,5 +31,16 @@
     font-size: calc(var(--book-font-size) * (8/8));
     margin-top: calc(var(--book-font-size) * (8/8));
     line-height: 1.75;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: calc(var(--book-font-size) * 1.5);
+    margin-top: calc(var(--book-font-size) * (8/8));
+    font-weight: bold;
+    line-height: 1.5;
   }
 }

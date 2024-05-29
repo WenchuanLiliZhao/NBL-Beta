@@ -6,16 +6,17 @@ const TOC = [
   {
     eps: [
       EP_000,
-    ]
-  },
-
-  {
-    title: "Set Theory",
-    eps: [
       EP_001,
       EP_002,
     ]
   },
+
+  // {
+  //   title: "Set Theory",
+  //   eps: [
+      
+  //   ]
+  // },
 ]
 
 export default TOC

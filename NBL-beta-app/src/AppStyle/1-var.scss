@@ -43,6 +43,9 @@ html {
   font-family: var(--font-family-system);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  // 这个用于改变字体大小
+  --book-font-size: 18px;
 }
 
 body {

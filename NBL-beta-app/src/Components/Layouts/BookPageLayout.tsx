@@ -3,6 +3,7 @@ import "./BookPageLayout.scss"
 import AudioPlayer4Book from "../ForAudioBooks/AudioPlayer4Book"
 import BookTocSideNav from "../Navigations/BookTocSideNav"
 import { useEffect, useRef } from "react"
+import ArticleDivider from "../Divisions.tsx/ArticleDivider"
 
 export default function BookPageLayout(props: any) {
   
@@ -34,7 +35,10 @@ export default function BookPageLayout(props: any) {
             </div>
           </>) : (<></>)}
         </div>
-        <div className="md">{props.children}</div>
+        <div className="md">
+          <ArticleDivider hidden={true} time={0} />
+          {props.children}
+        </div>
     </div>
   </>)
 }

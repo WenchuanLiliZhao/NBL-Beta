@@ -2,8 +2,8 @@
 import BookInfo from "../../Info"
 
 const EPInfo = {
-  title: "Introduction",
-  key: `${BookInfo.key}/indroduction`,
+  title: "Epigraph",
+  key: `${BookInfo.key}/epigraph`,
 }
 
 export default EPInfo

@@ -5,9 +5,10 @@ import "./TranscriptSentence.scss"
 interface TPProps {
     time: number;
     children: React.ReactNode;
+    className?: string;
 }
 
-const TS: React.FC<TPProps> = ({ time, children }) => {
+const TS: React.FC<TPProps> = ({ time, children, className }) => {
     const audioPlayerRef = useRef<HTMLAudioElement | null>(null);
 
     useEffect(() => {
@@ -23,7 +24,7 @@ const TS: React.FC<TPProps> = ({ time, children }) => {
     };
 
     return (
-        <span className="transcript-sentence tracking" data-start={time} onClick={handleClick}>
+        <span className={`transcript-sentence tracking ${className}`} data-start={time} onClick={handleClick}>
             {children}
         </span>
     );

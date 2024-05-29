@@ -3,8 +3,8 @@ import Authors from "../../../../Authors/Authors"
 import BookInfo from "../../Info"
 
 const EPInfo = {
-  title: "The Reletive Consistency of General Continuum Hypothesis",
-  key: `${BookInfo.key}/2`,
+  title: "This Book",
+  key: `${BookInfo.key}/this-book`,
 
   authors: [
     {
@@ -17,7 +17,7 @@ const EPInfo = {
     }
   ],
 
-  audio: "https://upload.wikimedia.org/wikipedia/commons/4/45/J.S.Bach_%E2%80%93_BWV_578.oga",
+  audio: "https://ia804506.us.archive.org/16/items/celtictwilight_1408_librivox/celtictwilight_01_yeats_64kb.mp3",
 }
 
 export default EPInfo
