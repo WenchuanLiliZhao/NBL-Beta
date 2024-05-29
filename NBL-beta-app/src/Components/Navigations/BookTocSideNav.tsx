@@ -20,8 +20,6 @@ export default function BookTocSideNav(props: any) {
   const authorsCount = book.info.authors.length;
   const hiddenAuthorsCount = authorsCount - maxDisplayAuthorsCount;
 
-  console.log(hiddenAuthorsCount);
-
   return (
     <>
       <div className={`book-toc-sidenav-clopen-bg-btn ${isCollapsed ? 'clopen' : ''}`} onClick={toggleSidebar}></div>
