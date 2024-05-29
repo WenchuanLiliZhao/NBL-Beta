@@ -66,7 +66,7 @@ export default function BookTocSideNav(props: any) {
                       key={`${ep}${k}`}
                       href={`/${ep.info.key}`}
                     >
-                      {ep.info.audio != null ? audioIcon : noAudioIcon}
+                      {ep.info.audio != null && props.hideAudio != true ? audioIcon : noAudioIcon}
                       <span className="text">{ep.info.title}</span>
                       {/* here is the placeholder for the icon of locked item */}
                     </a>

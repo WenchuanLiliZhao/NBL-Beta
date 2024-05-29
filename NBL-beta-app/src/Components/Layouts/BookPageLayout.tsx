@@ -18,8 +18,11 @@ export default function BookPageLayout(props: any) {
     }
   }, [ep]); // 将 ep 作为依赖，确保每次 ep 改变时触发
 
+  const displayAudioPlayerCondition = (ep.audio != null)
+  // console.log(displayAudioPlayerCondition)
+
   return (<>
-    {ep.audio != null ? (<AudioPlayer4Book src={ep.audio} />) : (<></>)}
+    {displayAudioPlayerCondition ? (<AudioPlayer4Book src={ep.audio} />) : (<></>)}
     <BookTocSideNav book={book} />
     <div className="book-page" ref={contentRef}>
       <div className="ep-title-section">
