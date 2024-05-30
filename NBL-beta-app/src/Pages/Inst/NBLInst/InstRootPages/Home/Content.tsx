@@ -15,9 +15,9 @@ export default function Content() {
       <StoriesSection
         headline={Stories.NBL_Story1}
         stories={[
-          Stories.NBL_Story1,
-          Stories.NBL_Story1,
-          Stories.NBL_Story1,
+          Stories.NBL_Story2,
+          Stories.NBL_Story3,
+          Stories.NBL_Story4,
         ]}
       />
 
@@ -26,9 +26,9 @@ export default function Content() {
         btnLink = ""
         bntText = "Read More"
 
-        headline = {Books.Book_Nahan_LuXun}
+        headline = {Books.Book_TheCelticTwilight}
         books = {[
-          Books.Book_TheCelticTwilight,
+          Books.Book_Nahan_LuXun,
           Books.Book_TheCelticTwilight,
           Books.Book_TheCelticTwilight,
           Books.Book_TheCelticTwilight,

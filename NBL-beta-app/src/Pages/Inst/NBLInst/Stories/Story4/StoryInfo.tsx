@@ -1,13 +1,13 @@
 import InstInfo from "../../InstInfo"
 
 const StoryInfo = {
-  title: "一份關於基礎數學的簡小書單",
+  title: "我們都忘了如何像孩子一樣看待這個世界",
   inst: InstInfo,
 
   update: [2023,1,10],
 
-  key: `${InstInfo.key}/story1`,
-  cover: "https://i.pinimg.com/564x/62/7b/e5/627be5ba565bae85d13648d50f769b42.jpg",
+  key: `${InstInfo.key}/story2`,
+  cover: "https://i.pinimg.com/564x/2d/10/2d/2d102ddf2ed3e46a20b7ee560ef3a912.jpg",
 
   test: InstInfo.brief,
 
