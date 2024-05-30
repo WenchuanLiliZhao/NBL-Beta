@@ -25,14 +25,14 @@ export default function BookTocSideNav(props: any) {
       <div className={`book-toc-sidenav-clopen-bg-btn ${isCollapsed ? 'clopen' : ''}`} onClick={toggleSidebar}></div>
 
       <div className="book-toc-sidenav-clopen-btn-alt" onClick={toggleSidebar}>
-        <span className="material-symbols-outlined icon">menu_open</span>
+        <span className="material-symbols-outlined icon">list</span>
       </div>
 
       <div className={`book-toc-sidenav ${isCollapsed ? 'clopen' : ''}`} id="book-toc-sidenav">
         <div className="book-toc-header">
           <div className="info">知書閱聽圖書館</div>
           <div className="clopen-btn" onClick={toggleSidebar}>
-            <span className="material-symbols-outlined icon">menu_open</span>
+            <span className="material-symbols-outlined icon">list</span>
           </div>
         </div>
 
