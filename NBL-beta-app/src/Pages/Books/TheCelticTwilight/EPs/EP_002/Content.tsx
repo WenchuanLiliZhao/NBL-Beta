@@ -1,5 +1,5 @@
 
-import ArticleDivider from "../../../../../Components/Divisions.tsx/ArticleDivider";
+
 import TS from "../../../../../Components/ForAudioBooks/TranscriptSentence";
 import Layout from "../../Layout";
 import EPInfo from "./EPInfo";
@@ -66,8 +66,6 @@ export default function Content() {
         <p>
           <TS time={157.690}><strong>W. B. YEATS.</strong> </TS>
         </p>
-
-        <ArticleDivider time={150} />
       </>
     </Layout>
   </>)

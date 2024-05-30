@@ -10,4 +10,8 @@
   &.active {
     background-color: var(--color-yellow);
   }
+
+  &::after {
+    content: " ";
+  }
 }

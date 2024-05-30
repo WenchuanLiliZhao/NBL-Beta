@@ -41,6 +41,7 @@ export default function BookPageLayout(props: any) {
         <div className="md">
           <ArticleDivider hidden={true} time={0} />
           {props.children}
+          <ArticleDivider hidden={false} />
         </div>
     </div>
   </>)

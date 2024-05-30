@@ -6,9 +6,10 @@ interface TPProps {
     time: number;
     children: React.ReactNode;
     className?: string;
+    id?: string;
 }
 
-const TS: React.FC<TPProps> = ({ time, children, className }) => {
+const TS: React.FC<TPProps> = ({ time, children, className, id }) => {
     const audioPlayerRef = useRef<HTMLAudioElement | null>(null);
 
     useEffect(() => {
@@ -24,7 +25,7 @@ const TS: React.FC<TPProps> = ({ time, children, className }) => {
     };
 
     return (
-        <span className={`transcript-sentence tracking ${className}`} data-start={time} onClick={handleClick}>
+        <span id={`${id}`} className={`transcript-sentence tracking ${className}`} data-start={time} onClick={handleClick}>
             {children}
         </span>
     );
