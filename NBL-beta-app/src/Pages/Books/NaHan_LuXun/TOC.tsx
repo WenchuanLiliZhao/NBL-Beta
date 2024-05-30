@@ -5,7 +5,8 @@ import EP_Fengbo_NaHan from "./EPs/EP_Fengbo_NaHan/0_Repo";
 import EP_Guxiang_NaHan from "./EPs/EP_Guxiang_NaHan/0_Repo";
 import EP_KongYiJi_NaHan from "./EPs/EP_KongYiJi_NaHan/0_Repo";
 import EP_KuangRenRiJi_NaHan from "./EPs/EP_KuangRenRiJi_NaHan/0_Repo";
-import EP_SheXi_NaHan from "./EPs/EP_MingTian_NaHan/0_Repo";
+import EP_MingTian_NaHan from "./EPs/EP_MingTian_NaHan/0_Repo";
+import EP_SheXi_NaHan from "./EPs/EP_SheXi_NaHan/0_Repo";
 import EP_ToufaDeGushi_NaHan from "./EPs/EP_ToufaDeGushi_NaHan/0_Repo";
 import EP_TuHeMao_NaHan from "./EPs/EP_TuHeMao_NaHan/0_Repo";
 import EP_YaDeXiju_NaHan from "./EPs/EP_YaDeXiju_NaHan/0_Repo";
@@ -20,7 +21,7 @@ const TOC = [
       EP_KuangRenRiJi_NaHan,
       EP_KongYiJi_NaHan,
       EP_Yao_NaHan,
-      EP_SheXi_NaHan,
+      EP_MingTian_NaHan,
       EP_YiJianXiaoShi_NaHan,
       EP_ToufaDeGushi_NaHan,
       EP_Fengbo_NaHan,
@@ -30,6 +31,7 @@ const TOC = [
       EP_BaiGuang_NaHan,
       EP_TuHeMao_NaHan,
       EP_YaDeXiju_NaHan,
+      EP_SheXi_NaHan,
     ]
   },
 
