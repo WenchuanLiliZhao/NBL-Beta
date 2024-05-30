@@ -1,9 +1,9 @@
 import Content from "./Content";
 import EPInfo from "./EPInfo";
 
-const EP_000 = {
+const EP_ATellerOfTales_TCT = {
   info: EPInfo,
   content: Content(),
 }
 
-export default EP_000
+export default EP_ATellerOfTales_TCT

@@ -1,13 +1,13 @@
-import EP_000 from "./EPs/EP_000/0_Repo";
-import EP_001 from "./EPs/EP_001/0_Repo";
-import EP_002 from "./EPs/EP_002/0_Repo";
-import EP_003 from "./EPs/EP_003/0_Repo";
+import EP_Epigraph_TCT from "./EPs/EP_Epigraph_TCT/0_Repo";
+import EP_TheHostingOfTheSidhe_TCT from "./EPs/EP_TheHostingOfTheSidhe_TCT/0_Repo";
+import EP_ThisBook_TCT from "./EPs/EP_ThisBook_TCT/0_Repo";
+import EP_ATellerOfTales_TCT from "./EPs/EP_ATellerOfTales_TCT/0_Repo";
 
 const EPs = {
-  EP_000,
-  EP_001,
-  EP_002,
-  EP_003,
+  EP_Epigraph_TCT,
+  EP_TheHostingOfTheSidhe_TCT,
+  EP_ThisBook_TCT,
+  EP_ATellerOfTales_TCT,
 }
 
 export default EPs

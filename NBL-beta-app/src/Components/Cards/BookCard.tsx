@@ -1,6 +1,5 @@
 import "./BookCard.scss"
 
-import { Link } from "react-router-dom";
 import Book_The_Lulu from "./Book_The_Lulu";
 
 export default function BookCard(props: any) {
@@ -13,7 +12,7 @@ export default function BookCard(props: any) {
   const cover = book.info.cover;
 
   return (<>
-    <Link to={key} className="book-card">
+    <a href={key} className="book-card">
       <div className="book-card-cover">
         <Book_The_Lulu cover={cover}/>
       </div>
@@ -30,6 +29,6 @@ export default function BookCard(props: any) {
         </div>
 
       </div>
-    </Link>
+    </a>
   </>)
 }

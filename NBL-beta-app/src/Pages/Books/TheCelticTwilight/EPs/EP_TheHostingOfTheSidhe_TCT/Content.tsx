@@ -3,7 +3,6 @@ import Layout from "../../Layout";
 import EPInfo from "./EPInfo";
 
 export default function Content() {
-  console.log("EP_001")
   
   return (<>
     <Layout ep={EPInfo}>

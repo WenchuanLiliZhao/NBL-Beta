@@ -23,6 +23,8 @@ function App() {
   }, []);
 
   // const [count, setCount] = useState(0) // 说实话我不知道这是什么，先留着再说了
+  
+  console.log(`bookpages: ${BookPages.EP_000_T.info.key}`)
 
   return (
     <>
