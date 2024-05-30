@@ -6,7 +6,7 @@ import Stories from "../../Stories/Stories";
 import InstInfo from "../../InstInfo";
 import RiverwoodLayout from "../../Layout";
 import BooksSection from "../../../../../Components/PageSections/BooksSection";
-import Book_TheCelticTwilight from "../../../../Books/TheCelticTwilight/0_Repo";
+import Books from "../../../../Books/Books";
 
 export default function Content() {
   return (<>
@@ -26,12 +26,12 @@ export default function Content() {
         btnLink = ""
         bntText = "Read More"
 
-        headline = {Book_TheCelticTwilight}
+        headline = {Books.Book_Nahan_LuXun}
         books = {[
-          Book_TheCelticTwilight,
-          Book_TheCelticTwilight,
-          Book_TheCelticTwilight,
-          Book_TheCelticTwilight,
+          Books.Book_TheCelticTwilight,
+          Books.Book_TheCelticTwilight,
+          Books.Book_TheCelticTwilight,
+          Books.Book_TheCelticTwilight,
         ]}
       />
     </RiverwoodLayout>
