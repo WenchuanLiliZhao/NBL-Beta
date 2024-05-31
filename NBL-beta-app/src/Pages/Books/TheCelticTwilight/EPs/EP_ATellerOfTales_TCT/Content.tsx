@@ -37,9 +37,9 @@ export default function Content() {
         <p id="paragraph-4">
           <TS id="ts-12" time={144.880}>I have copied this account of Paddy Flynn, with a few verbal alterations, from a note-book, which I almost filled with his tales and sayings, shortly after seeing him. I look now at the note-book regretfully, for the blank pages at the end will never be filled up. Paddy Flynn is dead. </TS>
           <TS id="ts-13" time={157.500}>A friend of mine gave him a large bottle of whiskey, and though a sober man at most times, the sight of so much liquor filled him with a great enthusiasm, and he lived upon it for some days, and then died. </TS>
-          <TS id="ts-14" time={169.580}>His body, worn out with old age and hard times, could not bear the drink as in his young days. He was a great teller of tales, and unlike our common romancers, knew how to empty </TS>
-          <TS id="ts-15" time={181.880}>heaven, hell, and purgatory, faeryland and earth, to people his stories. He did not live in a shrunken world, but knew of no less ample circumstance than did Homer himself. Perhaps </TS>
-          <TS id="ts-16" time={194.320}>the Gaelic people shall by his like bring back again the ancient simplicity and amplitude of imagination. What is literature but the expression of moods by the vehicle of symbol and incident? </TS>
+          <TS id="ts-14" time={169.580}>His body, worn out with old age and hard times, could not bear the drink as in his young days. He was a great teller of tales, and unlike our common romancers, </TS>
+          <TS id="ts-15" time={180.480}>knew how to empty heaven, hell, and purgatory, faeryland and earth, to people his stories. He did not live in a shrunken world, but knew of no less ample circumstance than did Homer himself. </TS>
+          <TS id="ts-16" time={193.920}>Perhaps the Gaelic people shall by his like bring back again the ancient simplicity and amplitude of imagination. What is literature but the expression of moods by the vehicle of symbol and incident? </TS>
           <TS id="ts-17" time={204.860}>And are there not moods which need heaven, hell, purgatory, and faeryland for </TS>
           <TS id="ts-18" time={212.000}>their expression, no less than this dilapidated earth? Nay, are there not moods which shall find </TS>
           <TS id="ts-19" time={218.560}>no expression unless there be men who dare to mix heaven, hell, purgatory, and faeryland together, </TS>
