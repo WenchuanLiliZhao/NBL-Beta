@@ -14,7 +14,7 @@ import EP_Yao_NaHan from "./EPs/EP_Yao_NaHan/0_Repo";
 import EP_YiJianXiaoShi_NaHan from "./EPs/EP_YiJianXiaoShi_NaHan/0_Repo";
 import EP_ZiXu_NaHan from "./EPs/EP_ZiXu_NaHan/0_Repo";
 
-const TOC = [
+const Toc = [
   {
     eps: [
       EP_ZiXu_NaHan,
@@ -43,4 +43,4 @@ const TOC = [
   // },
 ]
 
-export default TOC
+export default Toc

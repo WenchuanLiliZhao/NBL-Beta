@@ -1,6 +1,6 @@
 import EP_000_T from "./EPs/EP_000/0_Repo";
 
-const TOC = [
+const Toc = [
   {
     eps: [
       EP_000_T,
@@ -15,4 +15,4 @@ const TOC = [
   // },
 ]
 
-export default TOC
+export default Toc
