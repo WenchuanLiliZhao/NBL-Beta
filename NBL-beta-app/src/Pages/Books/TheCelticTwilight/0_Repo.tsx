@@ -1,13 +1,13 @@
 import Content from "./Content";
 import EPs from "./EPs";
 import BookInfo from "./Info";
-import Toc from "./Toc";
+import TableOfContent from "./TableOfContent";
 
 const Book_TheCelticTwilight = {
   info: BookInfo,
   content: Content(),
   eps: EPs,
-  toc: Toc,
+  toc: TableOfContent,
 }
 
 export default Book_TheCelticTwilight

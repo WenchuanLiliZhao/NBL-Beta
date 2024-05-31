@@ -1,6 +1,6 @@
 
 // import EP_YiJianXiaoShi_NaHan from "./EPs/EP_YiJianXiaoShi_NaHan/0_Repo";
-import Toc from "./Toc"
+import TableOfContents from "./TableOfContents"
 
 export default function Content() {
 
@@ -9,7 +9,7 @@ export default function Content() {
     關於這本書⋯⋯
 
     <p>
-      <a href={`/${Toc[0].eps[0].info.key}`}>EP0</a>
+      <a href={`/${TableOfContents[0].eps[0].info.key}`}>EP0</a>
     </p>
   
   </>)
