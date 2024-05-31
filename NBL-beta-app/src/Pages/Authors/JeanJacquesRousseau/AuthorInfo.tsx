@@ -3,7 +3,7 @@ const AuthorInfo = {
 
   title_tc: "讓-雅克·盧梭",
 
-  key: "jean-jacques-rousseau",
+  key: "author_jean-jacques-rousseau",
 }
 
 export default AuthorInfo

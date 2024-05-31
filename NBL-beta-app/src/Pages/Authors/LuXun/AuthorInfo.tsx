@@ -3,7 +3,7 @@ const AuthorInfo = {
 
   title_tc: "魯迅",
 
-  key: "lu-xun",
+  key: "author_lu-xun",
 }
 
 export default AuthorInfo
