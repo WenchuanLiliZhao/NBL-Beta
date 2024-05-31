@@ -3,7 +3,7 @@ import EP_TheHostingOfTheSidhe_TCT from "./EPs/EP_TheHostingOfTheSidhe_TCT/0_Rep
 import EP_ThisBook_TCT from "./EPs/EP_ThisBook_TCT/0_Repo";
 import EP_ATellerOfTales_TCT from "./EPs/EP_ATellerOfTales_TCT/0_Repo";
 
-const TOC = [
+const Toc = [
   {
     eps: [
       EP_Epigraph_TCT,
@@ -21,4 +21,4 @@ const TOC = [
   // },
 ]
 
-export default TOC;
+export default Toc;
