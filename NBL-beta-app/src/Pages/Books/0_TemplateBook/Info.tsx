@@ -13,7 +13,7 @@ const BookInfo = {
     },
   ],
 
-  catagories: "Test",
+  catagories: {},
 
   brief: "Brief",
 }

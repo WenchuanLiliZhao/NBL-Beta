@@ -22,14 +22,14 @@ export default function Content() {
       />
 
       <BooksSection
-        sectionTitle = "Test"
+        sectionTitle = "推薦圖書"
         btnLink = ""
-        bntText = "Read More"
+        btnText = "查看更多"
 
         headline = {Books.Book_TheCelticTwilight}
         books = {[
           Books.Book_Nahan_LuXun,
-          Books.Book_TheCelticTwilight,
+          Books.Book_TheSocialContract,
           Books.Book_TheCelticTwilight,
           Books.Book_TheCelticTwilight,
         ]}
