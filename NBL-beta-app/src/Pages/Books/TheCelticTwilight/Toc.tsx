@@ -21,4 +21,4 @@ const TOC = [
   // },
 ]
 
-export default TOC
+export default TOC;
