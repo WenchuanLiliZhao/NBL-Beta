@@ -1,8 +1,8 @@
 import "./RootLayout.scss"
 
-import HeroCard from "../../Components/Cards/HeroCard";
 import Nav from "../../Components/Navigations/Nav";
 import SiteRoof from "../../Components/Navigations/SiteRoof";
+import HeroStoryCard from "../../Components/Cards/HeroStoryCard";
 
 export default function RootLayout(props: any) {
   const headline = props.headline
@@ -11,7 +11,7 @@ export default function RootLayout(props: any) {
     <div className="root-page-layout">
       <SiteRoof/>
 
-      {headline != null ? (<HeroCard className="first-card" />) : ("")}
+      {headline != null ? (<HeroStoryCard story={headline} className="first-card" />) : ("")}
 
       <Nav />
       {props.children}

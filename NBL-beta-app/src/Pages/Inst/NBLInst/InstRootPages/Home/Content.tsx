@@ -1,27 +1,27 @@
 
 
 import InstHeader from "../../../../../Components/PageSections/InstHeader";
-import StoriesSection from "../../../../../Components/PageSections/StoriesSection";
-import Stories from "../../Stories/Stories";
+// import StoriesSection from "../../../../../Components/PageSections/StoriesSection";
+// import Stories from "../../Stories/Stories";
 import InstInfo from "../../InstInfo";
 import RiverwoodLayout from "../../Layout";
-import BooksSection from "../../../../../Components/PageSections/BooksSection";
-import Books from "../../../../Books/Books";
+// import BooksSection from "../../../../../Components/PageSections/BooksSection";
+// import Books from "../../../../Books/Books";
 
 export default function Content() {
   return (<>
     <RiverwoodLayout>
       <InstHeader instInfo={InstInfo} />
-      <StoriesSection
+      {/* <StoriesSection
         headline={Stories.NBL_Story1}
         stories={[
           Stories.NBL_Story2,
           Stories.NBL_Story3,
           Stories.NBL_Story4,
         ]}
-      />
+      /> */}
 
-      <BooksSection
+      {/* <BooksSection
         sectionTitle = "推薦圖書"
         btnLink = ""
         btnText = "查看更多"
@@ -33,7 +33,7 @@ export default function Content() {
           Books.Book_Hamlet,
           Books.Book_Metamathematics,
         ]}
-      />
+      /> */}
     </RiverwoodLayout>
   </>)
 }

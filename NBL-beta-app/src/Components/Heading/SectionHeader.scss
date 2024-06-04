@@ -1,22 +1,21 @@
 .section-header {
-  padding-top: 48px;
-  display: flex;
-  justify-content: space-between;
   padding-bottom: 8px;
+  text-align: center;
   border-bottom: 1px solid var(--stroke-color-main-trans);
   margin-bottom: 24px;
 
   .section-title {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 1.25;
     font-family: var(--font-family-article);
     font-weight: bold;
+    letter-spacing: 2.4px;
   }
   
-  .section-btn {
+  .section-quote {
+    margin-top: 8px;
     vertical-align:baseline;
     font-size: 14px;
-    line-height: 36px;
-    color: var(--b-color);
+    line-height: 1.5;
   }
 }

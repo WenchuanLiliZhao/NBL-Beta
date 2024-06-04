@@ -1,0 +1,71 @@
+.hero-story-card {
+  background-color: black;
+  color: white;
+  display: block;
+
+  &.first-card {
+    padding-top: var(--site-roof-height);
+    margin-bottom: calc(-1 * var(--site-roof-height));
+  }
+
+  &:not(.first-card) {
+    margin-top: calc(var(--content-v-padding) * 1.5);
+    margin-bottom: calc(var(--content-v-padding) * 1.5);
+  }
+
+  @media only screen and (min-width: 801px) {
+    &.small {display: none;}
+  }
+
+  @media only screen and (max-width: 800px) {
+    &.big {display: none;}
+  }
+
+  &.big .hero-story-card-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    .hero-story-cover-container {
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+      overflow: hidden;
+
+      .hero-story-cover {
+        position: absolute; top: 0; left: 0;
+
+        width: 100%;
+        padding-top: 100%;
+        
+        transition: transform 1s;
+  
+        &:hover {
+          transform: scale(105%);
+        }
+      }
+    }
+
+    .hero-story-info {
+      .gradient {
+        position: absolute;
+        height: 100%;
+        padding-right: 20%;
+        top: 0; right: -20%;
+        background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+        z-index: 1;
+      }
+
+      .border {
+        position: absolute;
+        height: 100%;
+        width: 4px;
+        top: 0; right: -2px;
+        background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+        z-index: 1;
+      }
+
+      
+    }
+  }
+  // end of &.big .hero-story-card-container
+}

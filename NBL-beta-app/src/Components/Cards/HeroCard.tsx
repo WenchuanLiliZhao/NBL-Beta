@@ -1,12 +1,12 @@
 
 
-import Editors from "../../Pages/Editors/Editors";
+// import Editors from "../../Pages/Editors/Editors";
 import "./HeroCard.scss"
 
 
 export default function HeroCard(props: any) {
-  const story = props.story;
-  console.log(story)
+  // const story = props.story;
+  // console.log(story)
 
   // 這個函數用於調整豎行排版時候的上下文字間距
   // function wrapCharacters(text: string) {
@@ -19,6 +19,7 @@ export default function HeroCard(props: any) {
   
 
   const title = "敦煌：古絲綢之路上的文明瑰寶"
+  // console.log(story)
   // const titleDisplay = wrapCharacters(title);
 
   const brief = "敦煌的地理位置十分獨特，位於河西走廊的盡頭，是古絲綢之路的咽喉要地。自公元前二世紀起，這裡便成為東西方貿易、文化、宗教交流的重要通道。商人、僧侶、使節、冒險家紛至沓來，在這裡交流商品、信仰和技術，形成了一個多元文化的交匯點。"
@@ -27,12 +28,20 @@ export default function HeroCard(props: any) {
   const authors = [
     {
       role: "撰文",
-      author: Editors.Editor_ShaoQianwen,
+      author: {
+        info: {
+          title: "邵倩文"
+        }
+      },
     },
 
     {
       role: "插圖",
-      author: Editors.Editor_ZhaoWenchuan,
+      author: {
+        info: {
+          title: "趙文川"
+        }
+      },
     }
   ]
 

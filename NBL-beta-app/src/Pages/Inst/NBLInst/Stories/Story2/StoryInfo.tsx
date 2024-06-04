@@ -1,3 +1,4 @@
+import Editors from "../../../../Editors/Editors"
 import InstInfo from "../../InstInfo"
 
 const StoryInfo = {
@@ -7,11 +8,18 @@ const StoryInfo = {
   update: [2023,1,10],
 
   key: `${InstInfo.key}/story2`,
-  cover: "https://i.pinimg.com/564x/2c/e1/e4/2ce1e48ee3409c69fb55ef47e21b73a9.jpg",
+  cover: "https://i.pinimg.com/564x/2b/0b/e6/2b0be69cdd2cef9f985c59ff903d6403.jpg",
 
   test: InstInfo.brief,
 
-  brief: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ex nunc, luctus sed lectus ut, porttitor varius lacus. In hac habitasse platea dictumst. Cras quis enim venenatis, ornare lorem non, finibus orci. Aliquam vehicula dictum lobortis. Sed odio urna, facilisis vitae nisl eu, iaculis pretium nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ante lacus, efficitur non semper posuere, porttitor vel arcu. Fusce erat nulla, tristique rutrum ipsum quis, volutpat ultrices ipsum. Curabitur non lorem tristique, venenatis est et, rutrum sapien.",
+  authors: [
+    {
+      author: Editors.Editor_ShaoQianwen,
+      role: "撰文"
+    },
+  ],
+
+  brief: "總結來說，敦煌不僅是古代絲綢之路上重要的貿易和文化中心，現在更是一座融合了歷史、藝術與自然美景的城市，繼續在現代大放異彩，吸引著無數人的目光和心靈。探索敦煌，就是在與歷史對話，感受人類文明的磅礡力量。",
 }
 
 export default StoryInfo

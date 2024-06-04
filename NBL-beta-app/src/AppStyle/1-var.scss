@@ -2,6 +2,18 @@
   --site-roof-height: 80px;
   --nav-height: 48px;
 
+  --big-section-width: 1400px;
+  --content-h-padding: 48px;
+  @media only screen and (max-width: 800px) {
+    --content-h-padding: 32px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    --content-h-padding: 24px;
+  }
+
+  --content-v-padding: 56px;
+
   // colors
   // ====================================
   --b-color: rgba(235, 62, 72, 1);
@@ -52,5 +64,5 @@ html {
 body {
   color: var(--text-color-main-trans);
   line-height: 1.5;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }

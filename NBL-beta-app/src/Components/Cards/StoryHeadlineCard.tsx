@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import "./StoryHeadlineCard.scss"
-import DateFormat from "../../Functions.tsx/DateFormat"
+import DateFormat from "../../Functions/DateFormat"
 
 export default function StoryHeadlineCard(props: any) {
   const story = props.story.info
