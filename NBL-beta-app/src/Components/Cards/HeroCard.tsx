@@ -8,20 +8,20 @@ export default function HeroCard(props: any) {
   const isTop = props.isTop
 
   // 這個函數用於調整豎行排版時候的上下文字間距
-  function wrapCharacters(text: string) {
-    return text.split('').map((char, index) => (
-      <span key={index} className="char">
-        {char}
-      </span>
-    ));
-  }
+  // function wrapCharacters(text: string) {
+  //   return text.split('').map((char, index) => (
+  //     <span key={index} className="char">
+  //       {char}
+  //     </span>
+  //   ));
+  // }
   
 
   const title = "敦煌：古絲綢之路上的文明瑰寶"
-  const titleDisplay = wrapCharacters(title);
+  // const titleDisplay = wrapCharacters(title);
 
   const brief = "敦煌的地理位置十分獨特，位於河西走廊的盡頭，是古絲綢之路的咽喉要地。自公元前二世紀起，這裡便成為東西方貿易、文化、宗教交流的重要通道。商人、僧侶、使節、冒險家紛至沓來，在這裡交流商品、信仰和技術，形成了一個多元文化的交匯點。"
-  const titleBrief = wrapCharacters(brief);
+  // const titleBrief = wrapCharacters(brief);
 
   const authors = [
     {
@@ -40,10 +40,10 @@ export default function HeroCard(props: any) {
       {authors.map((item: any, i: any) => (
         <span key={`${item}${i}`} className="author-container">
           <span className="author-role">
-            {wrapCharacters(item.role)}
+            {item.role}
           </span>
           <span className="author-name">
-            {wrapCharacters(item.author.info.title)}
+            {item.author.info.title}
           </span>
         </span>
       ))}
@@ -62,13 +62,13 @@ export default function HeroCard(props: any) {
         <div className="hero-card-info-container">
           <div className="vc">
             <div className="story-label">
-              {wrapCharacters("當前活動")}
+              當前活動
             </div>
             <div className="story-title">
-              {titleDisplay}
+              {title}
             </div>
             <div className="story-brief">
-              {titleBrief}
+              {brief}
             </div>
             
             {authorsContainer}
@@ -102,13 +102,13 @@ export default function HeroCard(props: any) {
         <div className="hero-card-info-container">
           <div className="vc">
             <div className="story-label">
-              {wrapCharacters("當前活動")}
+              當前活動
             </div>
             <div className="story-title">
-              {titleDisplay}
+              {title}
             </div>
             <div className="story-brief">
-              {titleBrief}
+              {brief}
             </div>
             
             {authorsContainer}
