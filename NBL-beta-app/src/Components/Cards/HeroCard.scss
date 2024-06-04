@@ -194,18 +194,12 @@
           margin-left: var(--small-font-adjust);
 
           color: rgba(white, 0.56);
-
-          .char {
-            
-          }
         }
       
         .story-title {
           font-size: var(--title-font-size);
           line-height: var(--title-line-height);
-          .char {
-            
-          }
+          font-weight: bold;
         }
 
         .story-brief {
@@ -217,11 +211,6 @@
           line-height: var(--brief-line-height);
 
           text-align: var(--small-text-align);
-          
-
-          .char {
-            
-          }
         }
 
         .authors {
@@ -248,10 +237,6 @@
 
             .author-name {
               font-weight: bold;
-            }
-  
-            * .char {
-              
             }
           }
         }
