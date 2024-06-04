@@ -1,17 +1,10 @@
-import { NavLink } from "react-router-dom";
-import RootPages from "./RootPages";
+import Nav from "../../Components/Navigations/Nav";
+import SiteRoof from "../../Components/Navigations/SiteRoof";
 
 export default function RootLayout(props: any) {
   return (<>
-    <nav className="root-page-nav">
-      <div>
-        <NavLink to={`/${RootPages.RootPage_Home.info.key}`}>Home</NavLink>
-      </div>
-      <div>
-        <NavLink to={`/${RootPages.RootPage_About.info.key}`}>About</NavLink>
-      </div>
-    </nav>
-    ===============
+    <SiteRoof />
+    <Nav />
     {props.children}
     </>)
 }
