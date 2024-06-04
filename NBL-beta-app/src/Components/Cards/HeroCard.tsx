@@ -85,15 +85,14 @@ export default function HeroCard(props: any) {
   </>)
 
   return (<>
-    <a href="" className="hero-card big">
-      {heroCardInfo}
-      {heroCardCover}
-    </a>
+      <a href="" className={`hero-card big ${props.className}`}>
+        {heroCardInfo}
+        {heroCardCover}
+      </a>
 
-    <a href="" className="hero-card small">
-      {heroCardInfo}
-      {heroCardCover}
-    </a>
-    
+      <a href="" className={`hero-card small ${props.className}`}>
+        {heroCardInfo}
+        {heroCardCover}
+      </a>
   </>)
 }

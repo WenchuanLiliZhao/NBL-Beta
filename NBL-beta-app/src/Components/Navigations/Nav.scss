@@ -1,0 +1,40 @@
+.site-nav {
+  position: relative;
+  z-index: calc(var(--z-index-nav) - 1);
+
+  &.test {
+    background-color: rgba(red, 0.4);
+  }
+  padding-top: var(--site-roof-height);
+
+  .site-nav-container {
+    height: var(--nav-height);
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 0 rgba(black, 0.08);
+
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    .item {
+      display: block;
+      align-self: center;
+      line-height: var(--nav-height);
+      font-size: 14px;
+      font-weight: bold;
+      color: rgba(black, 0.48);
+
+      transition: 0.3s;
+
+      &:hover {
+        color: var(--text-color-main-trans);
+      }
+
+      &.active {
+        color: var(--text-color-main-trans);
+        box-shadow: inset 0 -2px 0 var(--text-color-main-trans);
+      }
+    }
+  }
+}

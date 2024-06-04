@@ -1,10 +1,10 @@
-import RootLayout from "../RootLayout"
+import RootLayout from "../RootLayout";
 
 export default function Content() {
-  return (
+  return (<>
     <RootLayout>
       <br /><br /><br /><br />
-      404 Noooooot FOUND!
+      Welcome
     </RootLayout>
-  )
+  </>)
 }

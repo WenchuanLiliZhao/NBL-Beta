@@ -1,11 +1,36 @@
 .site-roof {
-  font-size: 20px;
-  line-height: 125%;
-  font-family: var(--font-family-article);
-  font-weight: bold;
-  color: white;
+  display: flex;
+  justify-content: center;
+  height: var(--site-roof-height);
   background-color: black;
   text-align: center;
-  padding: 20px;
   box-shadow: inset 0 -1px 0 rgba(white, 0.16);
+  
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: var(--z-index-nav);
+
+  .site-names {
+    align-self: center;
+
+    .site-name-tc {
+      font-size: 20px;
+      line-height: 125%;
+      font-family: var(--font-family-article);
+      color: white;
+      font-weight: bold;
+    }
+
+    .site-name-en {
+      font-size: 12px;
+      line-height: 125%;
+      font-family: var(--font-family-system);
+      color: white;
+      margin-top: 4px;
+      letter-spacing: 0.125px;
+    }
+  }
 }

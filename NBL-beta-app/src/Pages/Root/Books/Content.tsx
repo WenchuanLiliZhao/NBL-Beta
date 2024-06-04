@@ -1,9 +1,13 @@
+import RootLayout from "../RootLayout";
+
 export default function Content() {
   return (<>
 
-    <br /><br /><br /><br /><br /><br /><br />
+    <RootLayout>
+      <br /><br /><br /><br /><br /><br /><br />
 
-    books
+      books
+    </RootLayout>
   
   </>)
 }

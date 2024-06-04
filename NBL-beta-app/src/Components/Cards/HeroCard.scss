@@ -3,6 +3,11 @@
 
   background-color: black;
 
+  &.first-card {
+    padding-top: var(--site-roof-height);
+    margin-bottom: calc(-1 * var(--site-roof-height));
+  }
+
   @mixin hero-card-ellipsis() {
     overflow: hidden;
     text-overflow: ellipsis;
