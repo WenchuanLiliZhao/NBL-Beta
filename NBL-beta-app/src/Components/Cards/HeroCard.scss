@@ -1,6 +1,8 @@
 .hero-card {
   position: relative;
 
+  background-color: black;
+
   @mixin hero-card-ellipsis() {
     overflow: hidden;
     text-overflow: ellipsis;
