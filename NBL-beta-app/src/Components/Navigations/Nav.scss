@@ -1,6 +1,12 @@
 .site-nav {
-  position: relative;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+
   z-index: calc(var(--z-index-nav) - 1);
+
+  box-shadow: 0 1px 0 rgba(black, 0.08);
 
   &.test {
     background-color: rgba(red, 0.4);
