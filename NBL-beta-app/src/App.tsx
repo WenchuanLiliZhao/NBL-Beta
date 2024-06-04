@@ -9,6 +9,7 @@ import InstPages from './Pages/Inst/InstPages';
 import Authors from './Pages/Authors/Authors';
 import Books from './Pages/Books/Books';
 import BookPages from './Pages/Books/BookPages';
+import Editors from './Pages/Editors/Editors';
 
 function App() {
   useState(() => {
@@ -40,7 +41,7 @@ function App() {
                 path={`/${item.info.key}`}
                 element={item.content}
                 key = {`${item}${i}`}
-              ></Route>
+              />
             ))}
 
             {/* import institutes */}
@@ -49,7 +50,7 @@ function App() {
                 path={`/${item.info.key}`}
                 element={item.content}
                 key = {`${item}${i}`}
-              ></Route>
+              />
             ))}
 
             {/* import books */}
@@ -58,8 +59,7 @@ function App() {
                 path={`/${book.info.key}`}
                 element={book.content}
                 key = {`${book}${i}`}
-              >
-              </Route>
+              />
             ))}
 
             {/* import book pages */}
@@ -68,8 +68,7 @@ function App() {
                 path={`/${book.info.key}`}
                 element={book.content}
                 key = {`${book}${i}`}
-              >
-              </Route>
+              />
             ))}
 
             {/* import book authors */}
@@ -78,7 +77,16 @@ function App() {
                 path={`/${item.info.key}`}
                 element={item.content}
                 key = {`${item}${i}`}
-              ></Route>
+              />
+            ))}
+
+            {/* import editors */}
+            {Object.values(Editors).map((item: any, i: any) => (
+              <Route
+                path={`${item.info.key}`}
+                element={item.content}
+                key={`${item}${i}`}
+              />
             ))}
           </Routes>
         </BrowserRouter>

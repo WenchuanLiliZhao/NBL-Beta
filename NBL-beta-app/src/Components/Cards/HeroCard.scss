@@ -1,0 +1,59 @@
+.hero-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  .hero-card-cover {
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+  }
+
+  .hero-card-info {
+    background-color: black;
+    color: white;
+    position: relative;
+
+    .hero-card-info-container {
+
+      height: 480px;
+      
+
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      
+      .vc {
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        font-family: var(--font-family-article);
+        height: 100%;
+        margin: auto;
+        text-align: left;
+      
+        .story-title {
+          font-size: 48px;
+          line-height: 68px;
+          .char {
+            padding: 6px 0;
+          }
+        }
+
+        .story-brief {
+          letter-spacing: 125%;
+          line-height: 24px;
+          margin-right: 24px;
+
+          font-family: var(--font-family-system);
+
+          .char {
+            padding: 2px 0;
+          }
+        }
+      }
+    }
+
+    
+  }
+}
