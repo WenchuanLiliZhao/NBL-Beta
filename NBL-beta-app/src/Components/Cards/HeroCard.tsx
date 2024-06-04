@@ -5,7 +5,8 @@ import "./HeroCard.scss"
 
 
 export default function HeroCard(props: any) {
-  const isTop = props.isTop
+  const story = props.story;
+  console.log(story)
 
   // 這個函數用於調整豎行排版時候的上下文字間距
   // function wrapCharacters(text: string) {
@@ -83,25 +84,15 @@ export default function HeroCard(props: any) {
       </div>
   </>)
 
-  const firstStoryMark = (<>
-    {/* 这个部分用来 */}
-    {isTop == true ? (<>
-      <div id="first-story-end">
-      </div>
-    </>): (<></>)}
-  </>)
-
   return (<>
     <a href="" className="hero-card big">
       {heroCardInfo}
       {heroCardCover}
-      {firstStoryMark}
     </a>
 
     <a href="" className="hero-card small">
       {heroCardInfo}
       {heroCardCover}
-      {firstStoryMark}
     </a>
     
   </>)

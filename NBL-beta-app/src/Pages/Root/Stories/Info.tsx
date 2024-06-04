@@ -1,6 +1,6 @@
 const Info = {
-  title: "關於",
-  key: "about",
+  title: "故事",
+  key: "stories",
 }
 
 export default Info
