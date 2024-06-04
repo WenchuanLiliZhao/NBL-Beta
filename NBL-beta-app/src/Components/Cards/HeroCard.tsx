@@ -49,75 +49,60 @@ export default function HeroCard(props: any) {
       ))}
     </div>
   </>)
-  
 
-  const TopEnd = (<>
-    <div className="hero-card-top-end">
-    </div>
+  const heroCardInfo = (<>
+    <div className="hero-card-info">
+        <div className="hero-card-info-container">
+          <div className="vc">
+            <div className="story-label">
+              當前活動
+            </div>
+            <div className="story-title">
+              {title}
+            </div>
+            <div className="story-brief">
+              {brief}
+            </div>
+            
+            {authorsContainer}
+
+          </div>
+        </div>
+      </div>
+  </>)
+  
+  const heroCardCover = (<>
+    <div
+        className="hero-card-cover"
+        style={{
+          backgroundImage: `url(https://cdn.kastatic.org/ka-perseus-images/a44c5ebf55ef91a9c0ed2fe1eccbfc3d2cf43dcc.jpg)`
+        }}
+      >
+        <div className="gradient"></div>
+        <div className="border"></div>
+      </div>
+  </>)
+
+  const firstStoryMark = (<>
+    {/* 这个部分用来 */}
+    {isTop == true ? (<>
+      <div id="first-story-end">
+      </div>
+    </>): (<></>)}
   </>)
 
   return (<>
     <a href="" className="hero-card big">
-      <div className="hero-card-info">
-        <div className="hero-card-info-container">
-          <div className="vc">
-            <div className="story-label">
-              當前活動
-            </div>
-            <div className="story-title">
-              {title}
-            </div>
-            <div className="story-brief">
-              {brief}
-            </div>
-            
-            {authorsContainer}
-
-          </div>
-        </div>
-      </div>
-      <div
-        className="hero-card-cover"
-        style={{
-          backgroundImage: `url(https://cdn.kastatic.org/ka-perseus-images/a44c5ebf55ef91a9c0ed2fe1eccbfc3d2cf43dcc.jpg)`
-        }}
-      >
-        <div className="gradient"></div>
-        <div className="border"></div>
-      </div>
+      {heroCardInfo}
+      {heroCardCover}
+      {firstStoryMark}
     </a>
 
     <a href="" className="hero-card small">
-      <div
-        className="hero-card-cover"
-        style={{
-          backgroundImage: `url(https://cdn.kastatic.org/ka-perseus-images/a44c5ebf55ef91a9c0ed2fe1eccbfc3d2cf43dcc.jpg)`
-        }}
-      >
-        <div className="gradient"></div>
-        <div className="border"></div>
-      </div>
-
-      <div className="hero-card-info">
-        <div className="hero-card-info-container">
-          <div className="vc">
-            <div className="story-label">
-              當前活動
-            </div>
-            <div className="story-title">
-              {title}
-            </div>
-            <div className="story-brief">
-              {brief}
-            </div>
-            
-            {authorsContainer}
-
-          </div>
-        </div>
-      </div>
+      {heroCardInfo}
+      {heroCardCover}
+      {firstStoryMark}
     </a>
-    {/* 这个部分用来 */}
-    {isTop == true ? (<>{TopEnd}</>): (<></>)}
+    
   </>)
 }
