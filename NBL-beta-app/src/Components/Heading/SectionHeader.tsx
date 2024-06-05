@@ -2,14 +2,14 @@
 import "./SectionHeader.scss"
 
 export default function SectionHeader(props: any) {
-  const title = props.title
+  const label = props.label
   const quote = props.quote
   const quoteFrom = props.quoteFrom
 
   return (<>
     <div className="section-header">
       <div className="section-title-container">
-        <span className="section-title">{title}</span>
+        <span className="section-title">{label}</span>
       </div>
       <div className="section-quote-container">
         <div></div>

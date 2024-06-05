@@ -1,0 +1,89 @@
+.warrior-story-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  background-color: black;
+  color: white;
+
+  .cover-container {
+    width: 100%;
+    padding-top: 75%;
+  }
+
+  // --wariror-story-content-padding: 64px;
+
+  --warrior-story-title-font-size: 24px;
+  --warrior-story-normal-font-size: 14px;
+  --warrior-story-brief-length: 5;
+
+  @media only screen and (max-width: 1000px) {
+    --warrior-story-brief-length: 4;
+  }
+
+  @mixin warrior-card-ellipsis($lines) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    // -webkit-line-clamp: var(--hero-story-brief-length);
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  }
+
+  @media only screen and (max-width: 800px) {
+    display: block;
+  }
+
+  .story-info-container {
+    display: flex;
+    padding-left: var(--content-h-padding);
+    padding-right: var(--content-h-padding);
+    @media only screen and (max-width: 800px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    .story-info {
+      margin: 0 auto;
+      align-self: center;
+      // text-align: center;
+
+      .story-label {
+        font-size: var(--warrior-story-normal-font-size);
+        margin-bottom: 8px;
+      }
+
+      .story-title {
+        font-size: var(--warrior-story-title-font-size);
+        line-height: 1.25;
+        font-weight: bold;
+      }
+
+      .story-brief {
+        margin-top: 8px;
+        line-height: 1.75;
+        font-size: var(--warrior-story-normal-font-size);
+        @include warrior-card-ellipsis(var(--warrior-story-brief-length))
+      }
+
+      .story-authors {
+        margin-top: 12px;
+        font-size: var(--warrior-story-normal-font-size);
+
+        .author {
+          &:not(:first-of-type) {
+            margin-left: 1em;
+          }
+
+          .role {
+            margin-right: 0.4em;
+            color: rgba(white, 0.56);
+          }
+
+          .name {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

@@ -12,7 +12,7 @@ export default function StoryCard(props: any) {
   
     <Link to={`/${story.info.key}`} className={`story-card ${props.className}`}>
       <div className="story-cover-container">
-        <div className="story-cover" style={{backgroundImage: `url(${story.info.cover})`}}>
+        <div className="img" style={{backgroundImage: `url(${story.info.cover})`}}>
         </div>
       </div>
       <div className="story-info-container">
@@ -32,7 +32,7 @@ export default function StoryCard(props: any) {
             ))}
 
             <span className="story-update">
-              {DateFormatZh({date: story.info.update})}
+              <DateFormatZh date={story.info.update} />
             </span>
           </div>
         </div>

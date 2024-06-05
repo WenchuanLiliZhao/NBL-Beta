@@ -18,5 +18,5 @@ export default function DateFormatZh(props: any) {
   const output = `${year}年${month}月${day}日`
 
   // Format the date as "Month Day, Year"
-  return output;
+  return (<>{output}</>);
 }

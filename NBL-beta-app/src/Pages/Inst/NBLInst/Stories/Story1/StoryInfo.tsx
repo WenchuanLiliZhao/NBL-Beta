@@ -3,7 +3,7 @@ import Editors from "../../../../Editors/Editors"
 import InstInfo from "../../InstInfo"
 
 const StoryInfo = {
-  title: "一份關於基礎數學的簡小書單",
+  title: "地藏菩薩的前生今世",
   inst: InstInfo,
 
   update: [2023,1,10],
@@ -25,7 +25,7 @@ const StoryInfo = {
     },
   ],
 
-  brief: "敦煌位於中國甘肅省西北部，是古絲綢之路的重要節點，歷史悠久、文化豐富。",
+  brief: "蘇州，這座擁有兩千五百年歷史的古城，不僅以其深厚的文化底蘊和悠久的歷史聞名於世，更因其雅致的園林設計而被譽為“園林之城”。蘇州園林是中國古典園林的代表，以其獨特的美學理念和精巧的設計，展示了古代東方人對自然和藝術的熱愛與追求。",
 }
 
 export default StoryInfo

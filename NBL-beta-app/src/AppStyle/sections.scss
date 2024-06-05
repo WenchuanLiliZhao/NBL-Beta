@@ -1,0 +1,9 @@
+.section-size-big {
+  margin: 0 auto;
+  padding-left: var(--content-h-padding);
+  padding-right: var(--content-h-padding);
+  margin-top: var(--content-v-padding);
+  margin-bottom: var(--content-v-padding);
+
+  max-width: var(--big-section-width);
+}

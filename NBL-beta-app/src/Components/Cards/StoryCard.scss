@@ -15,17 +15,15 @@
   }
 
   .story-cover-container {
-    .story-cover {
+    .img {
       width: 100%; @media screen and (max-width: 800px) { width: 200px; }; @media screen and (max-width: 700px) { width: 160px; }; @media screen and (max-width: 600px) { width: 100px; };
-      padding-top: 56.25%;
-      position: relative;
-      
-      background-size: cover;
+      // padding-top: 56.25%;
+      padding-top: 75%;
     }
   }
 
   .story-info-container {
-    margin-top: 16px; @media screen and (max-width: 800px) { margin-top: 0 };
+    margin-top: 12px; @media screen and (max-width: 800px) { margin-top: 0 };
     .story-info {
       
 
@@ -38,7 +36,7 @@
 
       .story-brief {
         font-size: 14px;
-        margin-top: 8px;
+        margin-top: 4px;
 
         color: var(--text-color-secondary-trans);
 
@@ -52,7 +50,7 @@
 
     .story-author-info-container {
       display: flex;
-      margin-top: 12px;
+      margin-top: 8px;
       font-size: 14px;
       line-height: 1.5;
 
@@ -81,6 +79,7 @@
       }
 
       .story-update {
+        color: var(--text-color-secondary-trans);
         &::before {
           content: "·";
           margin: 0 4px;

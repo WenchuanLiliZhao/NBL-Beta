@@ -1,0 +1,22 @@
+.div-bg-img {
+  position: relative;
+  overflow: hidden;
+
+  .img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-size: cover;
+  }
+
+  &.ani-img-scale {
+    .img {
+      transition: transform 1s;
+  
+      &:hover {
+        transform: scale(105%);
+      }
+    }
+  }
+}

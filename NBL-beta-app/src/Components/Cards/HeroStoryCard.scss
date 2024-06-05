@@ -60,23 +60,9 @@
     
     
     .hero-story-cover-container {
-      position: relative;
       width: 100%;
       padding-top: 100%;
       overflow: hidden;
-
-      .hero-story-cover {
-        position: absolute; top: 0; left: 0;
-
-        width: 100%;
-        padding-top: 100%;
-        
-        transition: transform 1s;
-  
-        &:hover {
-          transform: scale(105%);
-        }
-      }
     }
 
     .hero-story-info {
@@ -157,14 +143,6 @@
     .hero-story-cover-container {
       width: 100%;
       padding-top: 100%;
-      position: relative;
-
-      .hero-story-cover {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0; left: 0;
-      }
     }
 
     .hero-story-info {
@@ -189,6 +167,8 @@
           font-size: 14px;
           margin-top: 8px;
           line-height: 1.75;
+
+          @include hero-card-ellipsis(5)
         }
 
         .story-authors {

@@ -9,13 +9,13 @@ export default function StoriesSection(props: any) {
 
   // input variables
   const stories = props.stories
-  const title = props.title;
+  const label = props.label;
   const quote = props.quote;
   const quoteFrom = props.quoteFrom
 
   return (<>
     <section className="stories-section">
-      <SectionHeader title={title} quote={quote} quoteFrom={quoteFrom} />
+      <SectionHeader label={label} quote={quote} quoteFrom={quoteFrom} />
 
       <div className="stories-section-body">
 
