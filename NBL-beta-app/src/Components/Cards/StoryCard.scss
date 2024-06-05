@@ -9,6 +9,9 @@
     display: flex;
     flex-direction: row-reverse;
     gap: 16px;
+
+    border-bottom: 1px dashed rgba(black, 0.08);
+    padding-bottom: 16px;
   }
 
   .story-cover-container {
