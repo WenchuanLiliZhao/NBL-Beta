@@ -2,6 +2,7 @@
   background-color: black;
   color: white;
   display: block;
+  text-align: justify;
 
   &.first-card {
     padding-top: var(--site-roof-height);
@@ -24,6 +25,19 @@
   &.big .hero-story-card-container {
     display: grid;
     grid-template-columns: 50% 50%;
+
+    --hero-story-title-font-size: 40px;
+    --hero-story-normal-font-size: 16px;
+    --hero-story-brief-length: 5;
+
+    @mixin hero-card-ellipsis($lines) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      // -webkit-line-clamp: var(--hero-story-brief-length);
+      -webkit-line-clamp: $lines;
+      -webkit-box-orient: vertical;
+    }
     
     .hero-story-cover-container {
       position: relative;
@@ -46,6 +60,58 @@
     }
 
     .hero-story-info {
+      display: flex;
+      .hero-story-info-container {
+        max-width: 480px;
+        margin: 0 auto;
+        align-self: center;
+        padding: var(--content-h-padding);
+        box-sizing: content-box;
+
+        .story-label {
+          font-size: var(--hero-story-normal-font-size);
+          line-height: 1.5;
+          margin-bottom: 4px;
+        }
+  
+        .story-title {
+          font-size: var(--hero-story-title-font-size);
+          font-weight: bold;
+          line-height: 1.25;
+          font-family: var(--font-family-article);
+          margin-left: -0.03em;
+        }
+
+        .story-brief {
+          margin-top: 0.6em;
+
+          font-size: var(--hero-story-normal-font-size);
+          line-height: 1.75;
+
+          @include hero-card-ellipsis(var(--hero-story-brief-length));
+        }
+
+        .story-authors {
+          @include hero-card-ellipsis(1);
+          margin-top: 0.75em;
+          
+          .author-container {
+            &:not(:first-of-type) {
+              margin-left: 1em;
+            }
+
+            .author-role {
+              margin-right: 0.4em;
+              color: rgba(white, 0.56);
+            }
+  
+            .author-name {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
       .gradient {
         position: absolute;
         height: 100%;
@@ -63,8 +129,6 @@
         background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
         z-index: 1;
       }
-
-      
     }
   }
   // end of &.big .hero-story-card-container

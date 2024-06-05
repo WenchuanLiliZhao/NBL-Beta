@@ -13,7 +13,7 @@ export default function BooksSection(props: any) {
   const books = props.books;
 
   return (<>
-    <div className="books-section">
+    <section className="books-section">
       <SectionHeader title={sectionTitle} btnLink={btnLink} btnText={btnText} />
 
       <div className="books-section-body">
@@ -29,7 +29,7 @@ export default function BooksSection(props: any) {
           ))}
         </div>
       </div>
-    </div>
+    </section>
     
   </>)
 }

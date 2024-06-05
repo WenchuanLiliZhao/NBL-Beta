@@ -10,7 +10,7 @@ export default function StoryCard(props: any) {
 
   return (<>
   
-    <Link to={`/${story.info.key}`} className="story-card">
+    <Link to={`/${story.info.key}`} className={`story-card ${props.className}`}>
       <div className="story-cover-container">
         <div className="story-cover" style={{backgroundImage: `url(${story.info.cover})`}}>
         </div>

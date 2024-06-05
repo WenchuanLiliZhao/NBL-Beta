@@ -7,7 +7,7 @@ export default function InstHeader(props: any) {
   console.log(instInfo.catagories)
   
   return (<>
-    <div className="inst-header-container">
+    <section className="inst-header-container">
       <div className="inst-header">
 
         <div className="inst-logo">
@@ -31,6 +31,6 @@ export default function InstHeader(props: any) {
           <Tag variant="fill" fontSize="small" text={`${instInfo.catagories[2]}`} />
         </div>
       </div>
-    </div>
+    </section>
   </>)
 }

@@ -11,16 +11,17 @@ export default function StoriesSection(props: any) {
   const stories = props.stories
   const title = props.title;
   const quote = props.quote;
+  const quoteFrom = props.quoteFrom
 
   return (<>
-    <div className="stories-section">
-      <SectionHeader title={title} quote={quote} />
+    <section className="stories-section">
+      <SectionHeader title={title} quote={quote} quoteFrom={quoteFrom} />
 
       <div className="stories-section-body">
 
         <div className="stories-section-list-container">
           {stories.map((item: any, i: any) => (
-            <StoryCard key={`${item}${i}`} story={item} />
+            <StoryCard key={`${item}${i}`} story={item} className="storiies-section-story"/>
           ))}
         </div>
 
@@ -53,6 +54,6 @@ export default function StoriesSection(props: any) {
           />
         </div> */}
       </div>
-    </div>
+    </section>
   </>)
 }

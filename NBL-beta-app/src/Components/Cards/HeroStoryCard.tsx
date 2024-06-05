@@ -20,37 +20,29 @@ export default function HeroStoryCard(props: any) {
     </div>
   </>)
 
-  
-
-  const authorsContainer = (<>
-    {authors.map((item: any, i: any) => (
-      <span key={`${item}${i}`} className="author-container">
-        <span className="author-role">
-          {item.role}
-        </span>
-        <span className="author-name">
-          {item.author.info.title}
-        </span>
-      </span>
-    ))}
-  </>)
-
   const heroCardInfo = (<>
     <div className="hero-story-info">
       <div className="hero-story-info-container">
-        <div className="vc">
-          <div className="story-label">
-            當前活動
-          </div>
-          <div className="story-title">
-            {title}
-          </div>
-          <div className="story-brief">
-            {brief}
-          </div>
-          
-          {authorsContainer}
-
+        <div className="story-label">
+          當前活動
+        </div>
+        <div className="story-title">
+          {title}
+        </div>
+        <div className="story-brief">
+          {brief}
+        </div>
+        <div className="story-authors">
+          {authors.map((item: any, i: any) => (
+            <span key={`${item}${i}`} className="author-container">
+              <span className="author-role">
+                {item.role}
+              </span>
+              <span className="author-name">
+                {item.author.info.title}
+              </span>
+            </span>
+          ))}
         </div>
       </div>
 

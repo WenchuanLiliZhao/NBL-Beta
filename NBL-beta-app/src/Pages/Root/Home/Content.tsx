@@ -12,7 +12,8 @@ export default function Content() {
 
       <StoriesSection
         title = "近期文章"
-        quote = "當人們學會書寫之前，歷史只在塵土中靜默"
+        quote = "学问之道无他全在求真"
+        quoteFrom = "徐光啓《農政全書》"
 
         stories = {[
           Stories.NBL_Story1,
