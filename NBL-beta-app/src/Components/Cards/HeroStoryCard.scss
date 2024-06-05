@@ -14,6 +14,15 @@
     margin-bottom: calc(var(--content-v-padding) * 1.5);
   }
 
+  @mixin hero-card-ellipsis($lines) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    // -webkit-line-clamp: var(--hero-story-brief-length);
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  }
+
   @media only screen and (min-width: 801px) {
     &.small {display: none;}
   }
@@ -30,14 +39,25 @@
     --hero-story-normal-font-size: 16px;
     --hero-story-brief-length: 5;
 
-    @mixin hero-card-ellipsis($lines) {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      // -webkit-line-clamp: var(--hero-story-brief-length);
-      -webkit-line-clamp: $lines;
-      -webkit-box-orient: vertical;
+    @media only screen and (max-width: 1100px) {
+      --hero-story-title-font-size: 36px;
+      --hero-story-normal-font-size: 16px;
+      --hero-story-brief-length: 5;
     }
+
+    @media only screen and (max-width: 1000px) {
+      --hero-story-title-font-size: 32px;
+      --hero-story-normal-font-size: 16px;
+      --hero-story-brief-length: 4;
+    }
+
+    @media only screen and (max-width: 900px) {
+      --hero-story-title-font-size: 28px;
+      --hero-story-normal-font-size: 16px;
+      --hero-story-brief-length: 3;
+    }
+
+    
     
     .hero-story-cover-container {
       position: relative;
@@ -78,7 +98,6 @@
           font-size: var(--hero-story-title-font-size);
           font-weight: bold;
           line-height: 1.25;
-          font-family: var(--font-family-article);
           margin-left: -0.03em;
         }
 
@@ -94,6 +113,7 @@
         .story-authors {
           @include hero-card-ellipsis(1);
           margin-top: 0.75em;
+          font-size: var(--hero-story-normal-font-size);
           
           .author-container {
             &:not(:first-of-type) {
@@ -132,4 +152,83 @@
     }
   }
   // end of &.big .hero-story-card-container
+
+  &.small .hero-story-card-container {
+    .hero-story-cover-container {
+      width: 100%;
+      padding-top: 100%;
+      position: relative;
+
+      .hero-story-cover {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0; left: 0;
+      }
+    }
+
+    .hero-story-info {
+      padding-left: var(--content-h-padding);
+      padding-right: var(--content-h-padding);
+      padding-top: 24px;
+      padding-bottom: 48px;
+      position: relative;
+      .hero-story-info-container {
+        .story-label {
+          font-size: 14px;
+          margin-bottom: 4px;
+        }
+
+        .story-title {
+          font-size: 28px;
+          font-weight: bold;
+          margin-left: -0.03em;
+        }
+
+        .story-brief {
+          font-size: 14px;
+          margin-top: 8px;
+          line-height: 1.75;
+        }
+
+        .story-authors {
+          @include hero-card-ellipsis(1);
+          margin-top: 0.75em;
+          font-size: 14px;
+          
+          .author-container {
+            &:not(:first-of-type) {
+              margin-left: 1em;
+            }
+
+            .author-role {
+              margin-right: 0.4em;
+              color: rgba(white, 0.56);
+            }
+  
+            .author-name {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .gradient {
+        width: 100%;
+        height: 20%;
+        left: 0; top: -20%;
+        background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+        position: absolute;
+      }
+
+      .border {
+        width: 100%;
+        height: 4px;
+        left: 0; top: -2px;
+        background-color: black;
+        position: absolute;
+      }
+    }
+  }
+  // end of &.small .hero-story-card-container
 }

@@ -26,7 +26,7 @@ export default function HeroStoryCard(props: any) {
         <div className="story-label">
           當前活動
         </div>
-        <div className="story-title">
+        <div className="story-title font-article">
           {title}
         </div>
         <div className="story-brief">

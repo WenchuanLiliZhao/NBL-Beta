@@ -12,7 +12,7 @@ export default function Content() {
 
       <StoriesSection
         title = "近期文章"
-        quote = "学问之道无他全在求真"
+        quote = "學問之道無他全在求真"
         quoteFrom = "徐光啓《農政全書》"
 
         stories = {[

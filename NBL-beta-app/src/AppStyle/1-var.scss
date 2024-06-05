@@ -1,3 +1,4 @@
+
 :root {
   --site-roof-height: 64px;
   --nav-height: 48px;
@@ -22,7 +23,9 @@
 
   --color-yellow: rgb(253, 221, 81);
 
+  --text-color-main-hex: #292929;
   --text-color-main-trans: rgba(0, 0, 0, 0.84);
+  
   --text-color-secondary-hex: #858585;
   --text-color-secondary-trans: rgba(0, 0, 0, 0.48);
   --text-color-negative-trans: rgba(0, 0, 0, 0.24);
@@ -38,10 +41,20 @@
 // fonts
 // ====================================
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
+
 :root {
   --font-family-system: inter, -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 
-  --font-family-article: "Noto Serif TC", serif;
+  --font-family-article: "Noto Serif TC", "Songti SC", "SimSun", "MingLiU", "PMingLiU", "Noto Serif CJK TC", serif;
+
+  .font-system {
+    font-family: var(--font-family-system);
+  }
+
+  .font-article {
+    font-family: var(--font-family-article);
+  }
 }
 
 
