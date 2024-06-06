@@ -4,16 +4,22 @@
   --nav-height: 48px;
 
   --big-section-width: 1400px;
+
   --content-h-padding: 48px;
   @media only screen and (max-width: 800px) {
     --content-h-padding: 32px;
   }
-
   @media only screen and (max-width: 400px) {
     --content-h-padding: 24px;
   }
 
   --content-v-padding: 80px;
+  @media only screen and (max-width: 800px) {
+    --content-v-padding: 32px;
+  }
+  @media only screen and (max-width: 400px) {
+    --content-v-padding: 24px;
+  }
 
   // colors
   // ====================================

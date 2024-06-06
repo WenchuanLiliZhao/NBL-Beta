@@ -1,0 +1,35 @@
+.root-page-header {
+  text-align: center;
+
+  .root-page-header-container {
+
+    border-bottom: 1px solid rgba(black, 0.08);
+    padding-bottom: 24px;
+
+    .root-page-title {
+      font-size: 32px;
+      font-weight: bold;
+
+      @media only screen and (max-width: 800px) {
+        font-size: 24px;
+      }
+    }
+  
+    .root-page-quote {
+      font-size: 18px;
+      margin-top: 24px;
+
+      @media only screen and (max-width: 800px) {
+        font-size: 16px;
+      }
+
+      .quote {
+        margin-top: 0;
+      }
+  
+      .quote-from {
+        margin-top: 8px;
+      }
+    }
+  }  
+}

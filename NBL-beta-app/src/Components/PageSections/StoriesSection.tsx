@@ -16,7 +16,7 @@ export default function StoriesSection(props: any) {
   return (<>
     <section className="stories-section page-section-big">
       <SectionHeader label={label} quote={quote} quoteFrom={quoteFrom} />
-
+      
       <div className="stories-section-body">
 
         <div className="stories-section-list-container">

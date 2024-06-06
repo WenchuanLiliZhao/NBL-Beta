@@ -1,0 +1,33 @@
+.nbl-plus-article {
+  display: flex;  
+
+  article.nbl-plus-article-container {
+    max-width: 760px;
+    margin-left: 80px;
+    font-size: 20px;
+
+    @media only screen and (max-width: 1080px) {
+      margin: 0 auto;
+    }
+
+    *:first-child {
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.75;
+      margin-top: 1em;
+    }
+
+    figure {
+      margin: 2em 0;
+
+      figcaption {
+        margin-top: 1em;
+        font-size: 16px;
+        color: var(--text-color-secondary-trans);
+        text-align: center;
+      }
+    }
+  }
+}

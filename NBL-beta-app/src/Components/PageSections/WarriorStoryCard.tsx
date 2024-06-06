@@ -15,9 +15,11 @@ export default function WarriorStoryCard(props: any) {
 
         <div className="story-info-container">
           <div className="story-info">
-            <div className="story-label">
-              {label}
-            </div>
+            {label != null ? (
+              <div className="story-label">
+                {label}
+              </div>
+            ) : (<></>)}
             <div className="story-title font-article">
               {story.info.title}
             </div>
