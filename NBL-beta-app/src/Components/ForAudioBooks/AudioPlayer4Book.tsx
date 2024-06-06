@@ -3,6 +3,7 @@ import './AudioPlayer4Book.scss';
 import { useLocation } from 'react-router-dom';
 import TsTracking from './Functions/TsTracking';
 import ToggleTsTracking from './Functions/ToggleTsTracking';
+import PageSmoothScroll from './Functions/PageSmoothScroll';
 
 interface AudioPlayerProps {
   src: string;
@@ -194,6 +195,7 @@ const AudioPlayer4Book: React.FC<AudioPlayerProps> = ({ src }) => {
   }, [location]);
 
   TsTracking();
+  PageSmoothScroll();
 
   return (
     <div className='audio-player-4-book'>

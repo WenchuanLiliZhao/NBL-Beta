@@ -88,8 +88,6 @@ export default function Content() {
           NBLInst,
         ]}
       />
-      
-      sss
 
     </RootLayout>
   </>)
