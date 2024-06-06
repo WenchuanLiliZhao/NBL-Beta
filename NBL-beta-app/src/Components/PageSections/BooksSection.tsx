@@ -1,25 +1,20 @@
 import "./BooksSection.scss"
 
 import BookCard from "../Cards/BookCard";
-import BookHeadlineCard from "../Cards/BookHeadlineCard";
 import SectionHeader from "../Heading/SectionHeader";
 
 export default function BooksSection(props: any) {
-  const sectionTitle = props.sectionTitle;
-  const btnLink = props.btnLink;
-  const btnText = props.btnText;
+  const label = props.label;
+  const quote = props.quote;
+  const quoteFrom = props.quoteFrom;
   
-  const headline = props.headline;
   const books = props.books;
 
   return (<>
-    <section className="books-section">
-      <SectionHeader title={sectionTitle} btnLink={btnLink} btnText={btnText} />
+    <section className="books-section page-section-big">
+      <SectionHeader label={label} quote={quote} quoteFrom={quoteFrom} />
 
       <div className="books-section-body">
-        <div className="books-section-headline-container">
-          <BookHeadlineCard book={headline}/>
-        </div>
 
         <div className="books-section-list">
           {books.map((item: any, index: any) => (

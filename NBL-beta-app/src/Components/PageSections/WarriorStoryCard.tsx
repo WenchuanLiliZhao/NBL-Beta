@@ -5,8 +5,9 @@ export default function WarriorStoryCard(props: any) {
   const label = props.label
 
   return (<>
-    <section className="section-size-big">
-      <div className="warrior-story-card">
+    <section className="page-section-big-alone">
+      <a href={`/${story.info.key}`}>
+        <div className="warrior-story-card">
 
         <div className="cover-container div-bg-img">
           <div className="img" style={{backgroundImage: `url(${story.info.cover})`}}></div>
@@ -39,6 +40,7 @@ export default function WarriorStoryCard(props: any) {
         </div>
         
       </div>
+      </a>
     </section>
   </>)
 }

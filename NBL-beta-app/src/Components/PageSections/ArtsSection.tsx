@@ -7,13 +7,15 @@ import ArtFrame from "../Cards/ArtFrame"
 export default function ArtsSection(props: any) {
   const label = props.label // string
   const quote = props.quote // string
+  const quoteFrom = props.quoteFrom // string
   const arts = props.arts // array
-
+  
   return (<>
     <section className="arts-section page-section-big">
       <SectionHeader
         label = {label}
         quote = {quote}
+        quoteFrom = {quoteFrom}
       />
       <div className="arts-section-container">
 

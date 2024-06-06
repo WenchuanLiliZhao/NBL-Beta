@@ -7,6 +7,8 @@ import StoriesSection from "../../../Components/PageSections/StoriesSection"
 import Arts from "../../Arts/Arts"
 import Stories from "../../Inst/NBLInst/Stories/Stories"
 import RootLayout from "../RootLayout"
+import BooksSection from "../../../Components/PageSections/BooksSection"
+import Books from "../../Books/Books"
 
 export default function Content() {
 
@@ -17,7 +19,7 @@ export default function Content() {
       <StoriesSection
         label = "近期文章"
         quote = "學問之道無他，全在求真"
-        quoteFrom = "徐光啓《農政全書》"
+        quoteFrom = "《農政全書》（徐光啓著）"
 
         stories = {[
           Stories.NBL_Story1,
@@ -29,6 +31,7 @@ export default function Content() {
       <ArtsSection
         label = "中國紋樣"
         quote = "文以達其道，理以明其文"
+        quoteFrom = "《文心雕龍》（劉勰著）"
         arts = {[
           Arts.Art_Art1,
           Arts.Art_Art2,
@@ -40,6 +43,18 @@ export default function Content() {
 
 
       <WarriorStoryCard label="活動推薦" story={Stories.NBL_Story1} />
+
+      <BooksSection
+        label = "敦煌奇遇"
+        quote = "凡經高昌至北庭，北行千餘里至于敦煌"
+        quoteFrom = "《大唐西域記》（玄奘著）"
+
+        books={[
+        Books.Book_Nahan_LuXun,
+        Books.Book_Hamlet,
+        Books.Book_TheCelticTwilight,
+        Books.Book_TheSocialContract,
+      ]} />
 
       <HeroStoryCard story={Stories.NBL_Story4} />
 

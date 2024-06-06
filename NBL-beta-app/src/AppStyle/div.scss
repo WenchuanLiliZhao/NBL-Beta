@@ -7,6 +7,17 @@ section[class*="page-section-"] {
     margin-bottom: var(--content-v-padding);
 
     max-width: var(--big-section-width);
+
+    &[class*="-alone"] {
+      margin-top: calc(var(--content-v-padding) * 1.5);
+      margin-bottom: calc(var(--content-v-padding) * 1.5);
+    }
+  }
+
+  &[class*="-fullwidth-alone"] {
+    width: 100%;
+    margin-top: calc(var(--content-v-padding) * 1.5);
+    margin-bottom: calc(var(--content-v-padding) * 1.5);
   }
 }
 
@@ -26,7 +37,7 @@ section[class*="page-section-"] {
 
   &.ani-img-scale {
     .img {
-      transition: transform 1s;
+      transition: transform 2s;
   
       &:hover {
         transform: scale(105%);

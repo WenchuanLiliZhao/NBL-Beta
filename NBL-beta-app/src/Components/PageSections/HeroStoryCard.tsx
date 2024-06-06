@@ -56,18 +56,22 @@ export default function HeroStoryCard(props: any) {
   
 
   return (<>
-    <a href={link} className={`hero-story-card big ${props.className}`}>
-      <div className="hero-story-card-container">
-        {heroCardInfo}
-        {heroCardCover}
-      </div>
-    </a>
+    <section className={`hero-story-card big page-section-fullwidth-alone ${props.className}`}>
+      <a href={link}>
+        <div className="hero-story-card-container">
+          {heroCardInfo}
+          {heroCardCover}
+        </div>
+      </a>
+    </section>
 
-    <a href={link} className={`hero-story-card small ${props.className}`}>
-      <div className="hero-story-card-container">
-        {heroCardCover}
-        {heroCardInfo}
-      </div>
-    </a>
+    <section className={`hero-story-card small page-section-fullwidth-alone  ${props.className}`}>
+      <a href={link}>
+        <div className="hero-story-card-container">
+          {heroCardCover}
+          {heroCardInfo}
+        </div>
+      </a>
+    </section>
   </>)
 }
