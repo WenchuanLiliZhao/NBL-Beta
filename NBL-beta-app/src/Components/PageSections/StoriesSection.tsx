@@ -14,7 +14,7 @@ export default function StoriesSection(props: any) {
   const quoteFrom = props.quoteFrom
 
   return (<>
-    <section className="stories-section">
+    <section className="stories-section page-section-big">
       <SectionHeader label={label} quote={quote} quoteFrom={quoteFrom} />
 
       <div className="stories-section-body">

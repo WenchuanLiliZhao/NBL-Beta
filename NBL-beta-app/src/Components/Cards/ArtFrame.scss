@@ -1,0 +1,113 @@
+// 注意，這個 component 必須被放置在一個 relative position 的 div 中，而不能單獨作為一個外部元素使用
+
+.art-frame {
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+  
+  text-align: center;
+
+  &:hover {
+    .img {
+      background-size: 120%;
+    }
+  }
+
+  .img {
+    background-size: 115%;
+  }
+
+  .info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: white;
+
+    .info-container {
+      padding: 16px;
+      padding-top: 80%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      .bg { opacity: 0; transition: 0.3s; }
+      .title { opacity: 0; transform: translate(0, 20%); transition: 0.3s; }
+      .captions { opacity: 0; transform: translate(0, 20%); transition: 0.3s; transition-delay: 0.1s; }
+      
+      &:hover {
+        .bg {
+          opacity: 1;
+        }
+
+        .title {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+
+        .captions {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+
+      .bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to top, rgba(black, 0.64), rgba(0, 0, 0, 0));
+      }   
+
+      .title {
+        font-weight: bold;
+        font-size: 20px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        // -webkit-line-clamp: var(--hero-story-brief-length);
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+
+        @media only screen and (max-width: 800px) {
+          font-size: 16px;
+        }
+      }
+
+      .captions {
+        margin-top: 4px;
+        font-size: 14px;
+        // .author {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        // -webkit-line-clamp: var(--hero-story-brief-length);
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+
+        @media only screen and (max-width: 800px) {
+          font-size: 12px;
+        }
+
+        .authors {
+          .author {
+            font-weight: bold;
+          }
+        }
+
+        .era {
+
+        }
+      }
+
+      
+
+      
+    }
+  }
+}

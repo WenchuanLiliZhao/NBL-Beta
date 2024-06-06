@@ -1,4 +1,3 @@
-
 import "./WarriorStoryCard.scss"
 
 export default function WarriorStoryCard(props: any) {

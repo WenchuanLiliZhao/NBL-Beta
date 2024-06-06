@@ -1,7 +1,10 @@
 
-import HeroStoryCard from "../../../Components/Cards/HeroStoryCard"
-import WarriorStoryCard from "../../../Components/Cards/WarriorStoryCard"
+import HeroStoryCard from "../../../Components/PageSections/HeroStoryCard"
+import WarriorStoryCard from "../../../Components/PageSections/WarriorStoryCard"
+import ArtsSection from "../../../Components/PageSections/ArtsSection"
+
 import StoriesSection from "../../../Components/PageSections/StoriesSection"
+import Arts from "../../Arts/Arts"
 import Stories from "../../Inst/NBLInst/Stories/Stories"
 import RootLayout from "../RootLayout"
 
@@ -13,7 +16,7 @@ export default function Content() {
 
       <StoriesSection
         label = "近期文章"
-        quote = "學問之道無他全在求真"
+        quote = "學問之道無他，全在求真"
         quoteFrom = "徐光啓《農政全書》"
 
         stories = {[
@@ -22,6 +25,19 @@ export default function Content() {
           Stories.NBL_Story3,
         ]}
       />
+
+      <ArtsSection
+        label = "中國紋樣"
+        quote = "文以達其道，理以明其文"
+        arts = {[
+          Arts.Art_Art1,
+          Arts.Art_Art2,
+          Arts.Art_Art3,
+          Arts.Art_Art4,
+          Arts.Art_Art5,
+        ]}
+      />
+
 
       <WarriorStoryCard label="活動推薦" story={Stories.NBL_Story1} />
 

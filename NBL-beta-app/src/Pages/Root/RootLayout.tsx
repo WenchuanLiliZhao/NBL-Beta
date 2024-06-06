@@ -2,7 +2,7 @@ import "./RootLayout.scss"
 
 import Nav from "../../Components/Navigations/Nav";
 import SiteRoof from "../../Components/Navigations/SiteRoof";
-import HeroStoryCard from "../../Components/Cards/HeroStoryCard";
+import HeroStoryCard from "../../Components/PageSections/HeroStoryCard";
 
 export default function RootLayout(props: any) {
   const headline = props.headline

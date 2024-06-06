@@ -10,6 +10,7 @@ import Authors from './Pages/Authors/Authors';
 import Books from './Pages/Books/Books';
 import BookPages from './Pages/Books/BookPages';
 import Editors from './Pages/Editors/Editors';
+import Arts from './Pages/Arts/Arts';
 
 function App() {
   useState(() => {
@@ -83,7 +84,16 @@ function App() {
             {/* import editors */}
             {Object.values(Editors).map((item: any, i: any) => (
               <Route
-                path={`${item.info.key}`}
+                path={`/${item.info.key}`}
+                element={item.content}
+                key={`${item}${i}`}
+              />
+            ))}
+
+            {/* import arts */}
+            {Object.values(Arts).map((item: any, i: any) => (
+              <Route
+                path={`/${item.info.key}`}
                 element={item.content}
                 key={`${item}${i}`}
               />
