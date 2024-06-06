@@ -17,7 +17,7 @@ export default function InstHeader(props: any) {
         <div className="inst-name">{instInfo.title}</div>
 
         <div className="inst-caption-info-container">
-          <Tag variant="info" fontSize="small" icon="home_pin" text={instInfo.location} />
+          {/* <Tag variant="info" fontSize="small" icon="home_pin" text={instInfo.location} /> */}
           <Tag variant="info" fontSize="small" icon="book" text={`${instInfo.bookCount}本書`} />
           <Tag variant="info" fontSize="small" icon="language" text={`${instInfo.language}`} />
         </div>

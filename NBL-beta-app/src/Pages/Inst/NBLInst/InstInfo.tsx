@@ -1,9 +1,12 @@
 const InstInfo = {
-  title: "知書學院圖書館",
+  title: "香港物趣博物館",
   key: "nbl-inst",
-  location: "香港，中國",
+  location: "香港",
+  state: "中國",
   bookCount: 1024,
   language: "中文",
+
+  cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Meister_nach_Chang_Hs%C3%BCan_001.jpg/640px-Meister_nach_Chang_Hs%C3%BCan_001.jpg",
 
   catagories: ["哲學", "文學", "數學"],
 
