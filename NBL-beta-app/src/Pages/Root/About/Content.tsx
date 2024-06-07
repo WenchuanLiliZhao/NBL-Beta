@@ -13,7 +13,7 @@ export default function Content() {
 
       <Article>
         <figure>
-          <img src="https://the-public-domain-review.imgix.net/collections/polychrome-woodblocks-of-ito-jakuchu-birds/45144302675_d9be470dbf_o.jpg?fit=max&w=1173&h=850" alt="" />
+          <img src="https://cdn.kastatic.org/ka-perseus-images/e0fca29dcbc591ceb49688397e031cb0abf461ee.jpg" alt="" />
 
           <figcaption>
             圖注寫在這裡

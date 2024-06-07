@@ -37,7 +37,7 @@
 
   &.big .hero-story-card-container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 55%;
 
     --hero-story-title-font-size: 40px;
     --hero-story-normal-font-size: 16px;
@@ -65,7 +65,7 @@
     
     .hero-story-cover-container {
       width: 100%;
-      padding-top: 100%;
+      padding-top: 75%;
       overflow: hidden;
     }
 
