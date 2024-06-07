@@ -1,6 +1,6 @@
 import Editors from "../../Editors/Editors"
 
-const StoryInfo = {
+const Info = {
   title: "地圖，哦地圖！",
 
   update: [2023,1,10],
@@ -18,4 +18,4 @@ const StoryInfo = {
   brief: "今日的敦煌在努力保護其文化遺產的同時，也在通過國際文化交流活動讓世界認識和欣賞這片土地的獨特魅力。",
 }
 
-export default StoryInfo
+export default Info

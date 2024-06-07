@@ -1,8 +1,8 @@
 import Content from "./Content";
-import StoryInfo from "./StoryInfo";
+import Info from "./Info";
 
 const NBL_Story4 = {
-  info: StoryInfo,
+  info: Info,
 
   content: Content(),
 }

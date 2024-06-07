@@ -1,8 +1,10 @@
+
 import StoriesLayout from "../StoriesLayout";
+import Info from "./Info";
 
 export default function Content() {
   return (<>
-    <StoriesLayout>
+    <StoriesLayout info={Info}>
 
       sss
 
