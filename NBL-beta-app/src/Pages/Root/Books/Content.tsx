@@ -2,6 +2,7 @@ import BooksSection from "../../../Components/PageSections/BooksSection";
 import PageHeader from "../../../Components/Heading/PageHeader";
 import Books from "../../Books/Books";
 import RootLayout from "../RootLayout";
+import Info from "./Info";
 
 
 export default function Content() {
@@ -9,11 +10,7 @@ export default function Content() {
 
     <RootLayout>
       <PageHeader 
-        title = "書籍"
-
-        quote = "夜雪初霽，荔子燈明，讀書聲徹，未覺便覺其中，有致知之樂。"
-
-        quoteFrom = "陸游《放翁家訓十首》"
+        info={Info}
       />
 
       <BooksSection

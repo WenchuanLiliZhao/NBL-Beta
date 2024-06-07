@@ -2,14 +2,16 @@ import "./PageHeader.scss"
 
 export default function PageHeader(props: any) {
 
-  const title = props.title
+  const info = props.info
 
-  const quote = props.quote
+  // uses of variables
+  const title = info.title
 
-  const quoteFrom = props.quoteFrom
+  const quote = info.quote
 
-  const align = props.align
-  // center, left
+  const quoteFrom = info.quoteFrom
+
+  const align = props.align // center, left
   
   return (<>
     <header className="root-page-header page-section-big" style={props.style}>
