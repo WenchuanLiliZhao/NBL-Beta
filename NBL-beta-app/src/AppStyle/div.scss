@@ -9,8 +9,8 @@
     max-width: var(--big-section-width);
 
     &[class*="-alone"] {
-      margin-top: calc(var(--content-v-padding) * 1.5);
-      margin-bottom: calc(var(--content-v-padding) * 1.5);
+      margin-top: calc(var(--content-v-padding) * 1.25);
+      margin-bottom: calc(var(--content-v-padding) * 1.25);
     }
   }
 

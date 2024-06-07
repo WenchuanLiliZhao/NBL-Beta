@@ -14,10 +14,14 @@
 
   --warrior-story-title-font-size: 24px;
   --warrior-story-normal-font-size: 14px;
-  --warrior-story-brief-length: 5;
+  --warrior-story-brief-length: 4;
 
   @media only screen and (max-width: 1000px) {
-    --warrior-story-brief-length: 4;
+    --warrior-story-brief-length: 3;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    --warrior-story-brief-length: 2;
   }
 
   @mixin warrior-card-ellipsis($lines) {

@@ -1,5 +1,6 @@
 
 import Article from "../../../Components/Article/Article";
+
 import RootLayout from "../RootLayout";
 import Info from "./Info";
 

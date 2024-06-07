@@ -23,32 +23,32 @@ export default function PageHeader(props: any) {
 
           {quote != null ? (<>
             <div className="brief font-article">
-              <div className="brief-paragraph">
+              <p className="caption brief-paragraph">
                 「{quote}」
-              </div>
-              <div className="brief-paragraph">
+              </p>
+              <p className="caption brief-paragraph">
                 ——{quoteFrom}
-              </div>
+              </p>
             </div>
           </>) : ""}
 
           {brief != null ? (<>
             <div className="brief secondary font-article">
-              <div className="brief-paragraph">
+              <p className="caption brief-paragraph">
                 {brief}
-              </div>
+              </p>
             </div>
           </>) : ""}
 
           {authors != null ? (<>
-            <div className="authors">
+            <p className="authors caption">
               {authors.map((item: any, i: any) => (
                 <span className="author" key={`${item}${i}`}>
                   <span className="role">{item.role}</span>
-                  <span className="name">{item.author.info.title}</span>
+                  <span className="name">{item.data.info.title}</span>
                 </span>
               ))}
-            </div>
+            </p>
           </>) : ""}
         </div>
       </div>

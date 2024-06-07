@@ -10,7 +10,7 @@ const Info = {
 
   authors: [
     {
-      author: Editors.Editor_ShaoQianwen,
+      data: Editors.Editor_ShaoQianwen,
       role: "撰文"
     },
   ],

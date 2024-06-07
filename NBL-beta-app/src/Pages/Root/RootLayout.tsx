@@ -21,7 +21,9 @@ export default function RootLayout(props: any) {
 
       <PageHeader info={props.info} showHeader={showHeader} align={align} />
 
-      {props.children}
+      <div className="root-page-body">
+        {props.children}
+      </div>
 
       <Footer />
     </div>

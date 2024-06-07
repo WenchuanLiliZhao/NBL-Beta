@@ -1,9 +1,9 @@
 
-import BookInfo from "../../Info"
+import Info from "../../Info"
 
 const EPInfo = {
   title: "端午節",
-  key: `${BookInfo.key}/duan-wu-jie`,
+  key: `${Info.key}/duan-wu-jie`,
 }
 
 export default EPInfo

@@ -1,0 +1,56 @@
+:root {
+  --font-size: 20px;
+}
+
+@mixin font-size($factor) {
+  font-size: calc(var(--font-size) * $factor);
+
+  @media only screen and (max-width: 1200px) {
+    font-size: calc(var(--font-size) * $factor * 0.9);
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: calc(var(--font-size) * $factor * 0.88);
+  }
+}
+
+p, .p {
+  @include font-size(1);
+
+  line-height: 1.75;
+  // margin-top: var(--p-spaceing);
+
+  &.caption {
+    @include font-size(0.9);
+
+    line-height: 1.75;
+    // margin-top: var(--p-spaceing);
+  }
+}
+
+figure {
+  @include font-size(1);
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    font-size: calc(var(--font-size) * 0.8);
+    margin-top: 1em;
+    color: var(--text-color-secondary-trans);
+    text-align: center;
+  }
+}
+
+h1, .h1 {
+  @include font-size(1.8);
+  margin-top: 1.5em;
+  // font-size: calc(var(--font-size) * 1.8);
+  font-weight: bold;
+}
+
+h2, .h2 {
+  margin-top: 1.5em;
+  font-size: calc(var(--font-size) * 1.25);
+  font-weight: bold;
+}

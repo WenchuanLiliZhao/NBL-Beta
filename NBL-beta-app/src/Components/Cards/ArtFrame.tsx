@@ -17,7 +17,7 @@ export default function ArtFrame(props: any) {
           <div className="captions">
             <span className="authors">
               {art.info.authors.map((item: any, i: any) => (
-                <span className="author" key={`${item}${i}`}>{item.author.info.title}</span>
+                <span className="author" key={`${item}${i}`}>{item.data.info.title}</span>
               ))}
             </span>
             <span className="era">

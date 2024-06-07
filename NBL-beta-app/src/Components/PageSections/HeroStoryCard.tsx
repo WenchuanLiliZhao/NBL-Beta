@@ -39,7 +39,7 @@ export default function HeroStoryCard(props: any) {
                 {item.role}
               </span>
               <span className="author-name">
-                {item.author.info.title}
+                {item.data.info.title}
               </span>
             </span>
           ))}

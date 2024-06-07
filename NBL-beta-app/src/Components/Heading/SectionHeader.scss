@@ -1,7 +1,7 @@
 .section-header {
-  padding-bottom: 8px;
+  padding-bottom: 12px;
   text-align: center;
-  border-bottom: 1px solid var(--stroke-color-main-trans);
+  border-bottom: 1px dashed var(--stroke-color-main-trans);
   margin-bottom: 24px;
 
   .section-title-container {

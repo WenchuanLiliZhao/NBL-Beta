@@ -1,0 +1,23 @@
+.book-info-layout {
+  --font-size: 16px !important;
+  // padding-left: calc(var(--content-h-padding));
+  // padding-right: calc(var(--content-h-padding));
+  // padding-top: calc(var(--content-v-padding) * 0.7);
+  // padding-bottom: calc(var(--content-v-padding) * 0.7);
+
+  .book-info-layout-container {
+    position: relative;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 38% auto;
+
+    .right {
+      position: fixed;
+      width: 62%;
+      right: 0;
+      top: 0;
+      background-color: rgba(black, 0.08);
+    }
+  }
+}

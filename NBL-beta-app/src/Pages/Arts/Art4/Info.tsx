@@ -7,7 +7,7 @@ const Info = {
   authors: [
     {
       role: "",
-      author: Authors.Author_LuXun,
+      data: Authors.Author_LuXun,
     }
   ],
 

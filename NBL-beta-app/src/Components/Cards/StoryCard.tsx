@@ -27,7 +27,7 @@ export default function StoryCard(props: any) {
             {story.info.authors.map((item: any, i: any) => (
               <span className="story-author" key={`${item}${i}`}>
                 {/* <span className="role">{item.role}</span> */}
-                <span className="author-name">{item.author.info.title}</span>
+                <span className="author-name">{item.data.info.title}</span>
               </span>
             ))}
 

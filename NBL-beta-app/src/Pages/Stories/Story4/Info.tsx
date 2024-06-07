@@ -13,12 +13,12 @@ const Info = {
 
   authors: [
     {
-      author: Editors.Editor_ShaoQianwen,
+      data: Editors.Editor_ShaoQianwen,
       role: "撰文"
     },
 
     {
-      author: Editors.Editor_ZhaoWenchuan,
+      data: Editors.Editor_ZhaoWenchuan,
       role: "設計"
     },
   ],

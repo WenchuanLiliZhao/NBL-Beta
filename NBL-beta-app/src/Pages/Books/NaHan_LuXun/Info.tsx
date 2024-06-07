@@ -1,6 +1,6 @@
 import Authors from "../../Authors/Authors"
 
-const BookInfo = {
+const Info = {
   title: "吶喊",
   key: "books/na-han",
   
@@ -20,4 +20,4 @@ const BookInfo = {
   </>),
 }
 
-export default BookInfo
+export default Info

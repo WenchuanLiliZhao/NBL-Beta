@@ -33,7 +33,7 @@ export default function WarriorStoryCard(props: any) {
                     {item.role}
                   </span>
                   <span className="name">
-                    {item.author.info.title}
+                    {item.data.info.title}
                   </span>
                 </span>
               ))}
