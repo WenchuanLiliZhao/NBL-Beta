@@ -31,20 +31,37 @@
       }
     }
   
-    .root-page-quote {
+    .brief {
       font-size: 18px;
       margin-top: 24px;
 
       @media only screen and (max-width: 800px) {
         font-size: 16px;
       }
-
-      .quote {
-        margin-top: 0;
-      }
   
-      .quote-from {
-        margin-top: 8px;
+      .brief-paragraph {
+        &:not(:first-of-type) {
+          margin-top: 8px;
+        }
+      }
+
+      &.secondary {
+        color: var(--text-color-secondary-trans);
+      }
+    }
+
+    .authors {
+      margin-top: 24px;
+      color: var(--text-color-secondary-trans);
+      .author {
+        margin-right: 0.5em;
+        .role {
+          // color: var(--text-color-negative-trans);
+          margin-right: 0.25em;
+        }
+        .name {
+          font-weight: bold;
+        }
       }
     }
   }

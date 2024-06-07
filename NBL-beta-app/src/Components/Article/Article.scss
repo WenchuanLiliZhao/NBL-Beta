@@ -5,7 +5,8 @@
   article.nbl-plus-article-container {
     max-width: 760px;
     margin-left: 80px;
-    font-size: 20px;
+    
+    position: relative;
 
     @media only screen and (max-width: 1080px) {
       margin: 0 auto;
@@ -15,20 +16,38 @@
       margin-top: 0;
     }
 
+    @mixin font-size($big, $small) {
+      font-size: $big;
+      @media only screen and (max-width: 800px) {font-size: $small;};
+    }
+
     p {
+      @include font-size(20px, 18px);
+
       line-height: 1.75;
       margin-top: 1em;
     }
 
     figure {
       margin: 2em 0;
+      
+      img {
+        width: 100%;
+      }
 
       figcaption {
+        @include font-size(16px, 14px);
+
         margin-top: 1em;
-        font-size: 16px;
         color: var(--text-color-secondary-trans);
         text-align: center;
       }
+    }
+
+    h2 {
+      margin-top: 1.5em;
+      @include font-size(24px, 20px);
+      font-weight: bold;
     }
   }
 }
