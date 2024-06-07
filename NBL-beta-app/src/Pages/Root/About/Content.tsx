@@ -2,14 +2,19 @@ import "./Styles.scss"
 
 
 import Article from "../../../Components/Article/Article";
-import RootPageHeader from "../../../Components/PageSections/RootPageHeader";
+import RootPageHeader from "../../../Components/Heading/RootPageHeader";
 import RootLayout from "../RootLayout";
-import Info from "./Info";
 
 export default function Content() {
   return (<>
     <RootLayout>
-      <RootPageHeader info={Info} style={{textAlign: "left"}} />
+      <RootPageHeader
+        title="關於我們"
+        quote= "人之立志，顧不如蜀鄙之僧哉？三日不讀書，則覺面目可憎，言語無味。"
+        quoteFrom= "黃庭堅《過平舅故居》"
+
+        style={{textAlign: "left"}}
+      />
 
       <Article>
         <figure>

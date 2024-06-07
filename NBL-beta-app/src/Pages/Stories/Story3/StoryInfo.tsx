@@ -1,16 +1,12 @@
-import Editors from "../../../../Editors/Editors"
-import InstInfo from "../../InstInfo"
+import Editors from "../../Editors/Editors"
 
 const StoryInfo = {
   title: "地圖，哦地圖！",
-  inst: InstInfo,
 
   update: [2023,1,10],
 
-  key: `${InstInfo.key}/story2`,
+  key: `story3`,
   cover: "https://i.pinimg.com/564x/f9/6f/86/f96f863f35f237875ac9f611fdec6d2d.jpg",
-
-  test: InstInfo.brief,
 
   authors: [
     {

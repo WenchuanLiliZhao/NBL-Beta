@@ -11,6 +11,7 @@ import Books from './Pages/Books/Books';
 import BookPages from './Pages/Books/BookPages';
 import Editors from './Pages/Editors/Editors';
 import Arts from './Pages/Arts/Arts';
+import Stories from './Pages/Stories/Stories';
 
 function App() {
   useState(() => {
@@ -80,6 +81,17 @@ function App() {
                 key = {`${item}${i}`}
               />
             ))}
+
+
+            {/* import stories */}
+            {Object.values(Stories).map((item: any, i: any) => (
+              <Route
+                path={`/${item.info.key}`}
+                element={item.content}
+                key = {`${item}${i}`}
+              />
+            ))}
+
 
             {/* import editors */}
             {Object.values(Editors).map((item: any, i: any) => (

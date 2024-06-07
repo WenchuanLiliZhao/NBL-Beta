@@ -1,16 +1,15 @@
-import Editors from "../../../../Editors/Editors"
-import InstInfo from "../../InstInfo"
+import Editors from "../../Editors/Editors"
+import Insts from "../../Inst/Insts"
 
 const StoryInfo = {
   title: "我們都忘了如何像孩子一樣看待這個世界",
-  inst: InstInfo,
 
   update: [2023,1,10],
 
-  key: `${InstInfo.key}/story2`,
-  cover: "https://images.unsplash.com/photo-1687141924868-b56ec9b7edb4?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  inst: Insts.NBLInst,
 
-  test: InstInfo.brief,
+  key: `story4`,
+  cover: "https://images.unsplash.com/photo-1687141924868-b56ec9b7edb4?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
   authors: [
     {

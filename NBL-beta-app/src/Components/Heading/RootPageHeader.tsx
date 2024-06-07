@@ -1,22 +1,27 @@
 import "./RootPageHeader.scss"
 
 export default function RootPageHeader(props: any) {
-  const info = props.info
 
+  const title = props.title
+
+  const quote = props.quote
+
+  const quoteFrom = props.quoteFrom
+  
   return (<>
     <header className="root-page-header page-section-big" style={props.style}>
       <div className="root-page-header-container">
         <h1 className="root-page-title font-article">
-          {info.titleOnPage != null ? info.titleOnPage : info.title }
+          {title}
         </h1>
 
-        {info.quote != null ? (<>
+        {quote != null ? (<>
           <div className="root-page-quote">
             <div className="quote font-article">
-              「{info.quote}」
+              「{quote}」
             </div>
             <div className="quote-from font-article">
-              ——{info.quoteFrom}
+              ——{quoteFrom}
             </div>
           </div>
         </>) : ""}

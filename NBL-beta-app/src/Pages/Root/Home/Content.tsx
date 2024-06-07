@@ -5,7 +5,7 @@ import ArtsSection from "../../../Components/PageSections/ArtsSection"
 
 import StoriesSection from "../../../Components/PageSections/StoriesSection"
 import Arts from "../../Arts/Arts"
-import Stories from "../../Inst/NBLInst/Stories/Stories"
+import Stories from "../../Stories/Stories"
 import RootLayout from "../RootLayout"
 import BooksSection from "../../../Components/PageSections/BooksSection"
 import Books from "../../Books/Books"

@@ -1,16 +1,12 @@
-import Editors from "../../../../Editors/Editors"
-import InstInfo from "../../InstInfo"
+import Editors from "../../Editors/Editors"
 
 const StoryInfo = {
   title: "奇妙的兒童世界",
-  inst: InstInfo,
 
   update: [2023,1,10],
 
-  key: `${InstInfo.key}/story2`,
+  key: `story2`,
   cover: "https://i.pinimg.com/564x/2b/0b/e6/2b0be69cdd2cef9f985c59ff903d6403.jpg",
-
-  test: InstInfo.brief,
 
   authors: [
     {

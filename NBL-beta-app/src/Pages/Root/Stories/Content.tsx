@@ -1,7 +1,7 @@
-import RootPageHeader from "../../../Components/PageSections/RootPageHeader";
+import RootPageHeader from "../../../Components/Heading/RootPageHeader";
 import StoriesSection from "../../../Components/PageSections/StoriesSection";
 import WarriorStoryCard from "../../../Components/PageSections/WarriorStoryCard";
-import Stories from "../../Inst/NBLInst/Stories/Stories";
+import Stories from "../../Stories/Stories";
 import RootLayout from "../RootLayout";
 import Info from "./Info";
 

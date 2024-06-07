@@ -1,17 +1,13 @@
 
-import Editors from "../../../../Editors/Editors"
-import InstInfo from "../../InstInfo"
+import Editors from "../../Editors/Editors"
 
 const StoryInfo = {
   title: "地藏菩薩的前生今世",
-  inst: InstInfo,
 
   update: [2023,1,10],
 
-  key: `${InstInfo.key}/story1`,
+  key: `story1`,
   cover: "https://i.pinimg.com/564x/07/6e/f1/076ef12a3cefebb101fddcc7aac74940.jpg",
-
-  test: InstInfo.brief,
 
   authors: [
     {
