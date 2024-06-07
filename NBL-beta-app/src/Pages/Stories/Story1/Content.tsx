@@ -1,6 +1,11 @@
+import StoriesLayout from "../StoriesLayout";
 
 export default function Content() {
   return (<>
-    my story...
+    <StoriesLayout>
+
+      sss
+
+    </StoriesLayout>
   </>)
 }

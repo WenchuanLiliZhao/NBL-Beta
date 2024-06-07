@@ -2,13 +2,13 @@ import "./Styles.scss"
 
 
 import Article from "../../../Components/Article/Article";
-import RootPageHeader from "../../../Components/Heading/RootPageHeader";
+import PageHeader from "../../../Components/Heading/PageHeader";
 import RootLayout from "../RootLayout";
 
 export default function Content() {
   return (<>
     <RootLayout>
-      <RootPageHeader
+      <PageHeader
         title="關於我們"
         quote= "人之立志，顧不如蜀鄙之僧哉？三日不讀書，則覺面目可憎，言語無味。"
         quoteFrom= "黃庭堅《過平舅故居》"

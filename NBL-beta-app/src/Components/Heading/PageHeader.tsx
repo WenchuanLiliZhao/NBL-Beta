@@ -1,6 +1,6 @@
-import "./RootPageHeader.scss"
+import "./PageHeader.scss"
 
-export default function RootPageHeader(props: any) {
+export default function PageHeader(props: any) {
 
   const title = props.title
 

@@ -1,4 +1,4 @@
-import RootPageHeader from "../../../Components/Heading/RootPageHeader";
+import PageHeader from "../../../Components/Heading/PageHeader";
 import StoriesSection from "../../../Components/PageSections/StoriesSection";
 import WarriorStoryCard from "../../../Components/PageSections/WarriorStoryCard";
 import Stories from "../../Stories/Stories";
@@ -8,7 +8,7 @@ import RootLayout from "../RootLayout";
 export default function Content() {
   return (<>
     <RootLayout>
-      <RootPageHeader
+      <PageHeader
         title = "中華文化主題活動"
         quote = "夜雪初霽，荔子燈明，讀書聲徹，未覺便覺其中，有致知之樂。"
         quoteFrom = "——陸游《放翁家訓十首》"
