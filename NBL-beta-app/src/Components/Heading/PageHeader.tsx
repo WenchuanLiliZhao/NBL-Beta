@@ -12,8 +12,10 @@ export default function PageHeader(props: any) {
   const quoteFrom = info.quoteFrom
 
   const align = props.align // center, left
-  
-  return (<>
+
+  const showHeader = props.showHeader
+
+  const element = (<>
     <header className="root-page-header page-section-big" style={props.style}>
       <div className="root-page-header-container">
         <div className={`align ${align}`}>
@@ -34,5 +36,9 @@ export default function PageHeader(props: any) {
         </div>
       </div>
     </header>
+  </>)
+  
+  return (<>
+    {showHeader != false ? element : "" }
   </>)
 }

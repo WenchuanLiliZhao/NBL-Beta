@@ -1,4 +1,4 @@
-import PageHeader from "../../../Components/Heading/PageHeader";
+
 import StoriesSection from "../../../Components/PageSections/StoriesSection";
 import WarriorStoryCard from "../../../Components/PageSections/WarriorStoryCard";
 import Stories from "../../Stories/Stories";
@@ -8,10 +8,7 @@ import Info from "./Info";
 
 export default function Content() {
   return (<>
-    <RootLayout>
-      <PageHeader
-        info={Info}
-      />
+    <RootLayout info={Info}>
 
       <WarriorStoryCard label="活動推薦" story={Stories.NBL_Story1} />
 

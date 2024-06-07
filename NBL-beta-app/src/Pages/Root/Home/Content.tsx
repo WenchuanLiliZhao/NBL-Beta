@@ -11,12 +11,13 @@ import BooksSection from "../../../Components/PageSections/BooksSection"
 import Books from "../../Books/Books"
 import InstScopeSection from "../../../Components/PageSections/InstScopesSection"
 import NBLInst from "../../Inst/NBLInst/0_Repo"
+import Info from "./Info"
 
 export default function Content() {
 
   // console.log(Stories.NBL_Story1)
   return (<>
-    <RootLayout headline={Stories.NBL_Story4}>
+    <RootLayout headline={Stories.NBL_Story4} info={Info} showHeader={false}>
 
       <StoriesSection
         label = "近期文章"

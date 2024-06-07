@@ -1,20 +1,11 @@
-import "./Styles.scss"
-
 
 import Article from "../../../Components/Article/Article";
-import PageHeader from "../../../Components/Heading/PageHeader";
 import RootLayout from "../RootLayout";
 import Info from "./Info";
 
 export default function Content() {
   return (<>
-    <RootLayout>
-      <PageHeader
-        info={Info}
-
-        align="left"
-      />
-
+    <RootLayout info={Info} align="left">
       <Article>
         <figure>
           <img src="https://cdn.kastatic.org/ka-perseus-images/e0fca29dcbc591ceb49688397e031cb0abf461ee.jpg" alt="" />

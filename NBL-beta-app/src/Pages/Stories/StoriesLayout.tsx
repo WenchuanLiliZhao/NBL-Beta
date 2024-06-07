@@ -7,7 +7,9 @@ export default function StoriesLayout(props: any) {
   return (<>
     <SiteRoof />
     <Nav />
-    <PageHeader />
+
+    <PageHeader info={props.info} />
+
     <Article>
       {props.children}
     </Article>
