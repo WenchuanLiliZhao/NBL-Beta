@@ -35,7 +35,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             {/* set home page of nbl */}
-            <Route index element={RootPages.RootPage_Welcome.content} />
+            <Route index element={RootPages.RootPage_Home.content} />
 
             {/* import root pages of nbl */}
             {Object.values(RootPages).map((item: any, i: any) => (

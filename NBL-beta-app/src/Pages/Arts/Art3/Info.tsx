@@ -13,7 +13,7 @@ const Info = {
 
   era: "北宋年间",
   
-  src: "https://the-public-domain-review.imgix.net/collections/examples-of-chinese-ornament-1867/ExamplesChinese00Jone_0041-edit.jpeg?fit=max&w=2400",
+  src: "https://i.pinimg.com/564x/aa/75/e2/aa75e26cf72a89dd2f9613dd4e6192c7.jpg",
 
   from: "Public Domain Review",
 }
